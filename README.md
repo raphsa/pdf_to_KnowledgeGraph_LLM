@@ -5,9 +5,9 @@
 **Course:** Natural Language Processing and Text Mining
 
 **Authors:** 
-- Sali Raffaele [@raphsa](https://github.com/raphsa)
-- Vianello Martina [@martinavianello](https://github.com/martinavianello)
-- Zani Beatrice [@beazani](https://github.com/beazani)
+- Sali Raffaele [![GitHub - raphsa](https://img.shields.io/badge/GitHub-@raphsa-blue?logo=github)](https://github.com/raphsa)
+- Vianello Martina [![GitHub - martinavianello](https://img.shields.io/badge/GitHub-@martinavianello-blue?logo=github)](https://github.com/martinavianello)
+- Zani Beatrice [![GitHub - beazani](https://img.shields.io/badge/GitHub-@beazani-blue?logo=github)](https://github.com/beazani)
 
 **Year:** 2025/2026
 
