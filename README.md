@@ -1,7 +1,9 @@
 # PDF-to-Knowledge Graph → Instruction Generation → LLM Fine-Tuning
 
-**University:**
+**University:** University of Oulu, Finland
+
 **Course:** Natural Language Processing and Text Mining
+
 **Authors:** 
 - Sali Raffaele @raphsa
 - Vianello Martina [@martinavianello](https://github.com/martinavianello)
