@@ -5,7 +5,7 @@
 **Course:** Natural Language Processing and Text Mining
 
 **Authors:** 
-- Sali Raffaele @raphsa
+- Sali Raffaele [@raphsa](https://github.com/raphsa)
 - Vianello Martina [@martinavianello](https://github.com/martinavianello)
 - Zani Beatrice [@beazani](https://github.com/beazani)
 
