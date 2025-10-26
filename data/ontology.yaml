@@ -1,0 +1,152 @@
+# metadata for the ontology:
+# (base_uri = unique web address for the ontology)
+meta:
+  title: "Food, Nutrition, and Health Ontology"
+  version: "1.0"
+  created: "2025-10-25"
+  base_uri: "http://example.org/food#"
+  description: >
+    A minimal ontology for representing food ingredients, nutrients, preparation techniques,
+    dietary guidelines, and associated health outcomes, based on the report
+    'Sustainable Health from Food – National Nutrition Recommendations 2024'.
+
+# prefixes: abbreviations for long web addresses (URIs) to identify things in the ontology
+prefixes:
+  ex: "http://example.org/food#" # ontology namespace
+  xsd: "http://www.w3.org/2001/XMLSchema#" # XML schema datatypes
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#" # RDF vocabulary
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#" # RDF schema vocabulary
+
+classes:
+
+  ingredient:
+    description: A physical food item or raw material that people consume or use in recipes.
+    attributes:
+      name: {type: xsd:string, cardinality: 1}
+      foodGroup: {type: xsd:string, cardinality: 0..1}
+      origin: {type: xsd:string, cardinality: 0..1}
+      processingLevel: {type: xsd:string, cardinality: 0..1}
+      energyValue: {type: xsd:float, cardinality: 0..1}
+      portionSize: {type: xsd:string, cardinality: 0..1}
+      environmentalImpactScore: {type: xsd:float, cardinality: 0..1}
+
+  nutrient:
+    description: A chemical or biological substance contained in foods that contributes to physiological function and health.
+    attributes:
+      name: {type: xsd:string, cardinality: 1}
+      nutrientType: {type: xsd:string, cardinality: 0..1}
+      unit: {type: xsd:string, cardinality: 0..1}
+      function: {type: xsd:string, cardinality: 0..1}
+      deficiencySymptoms: {type: xsd:string, cardinality: 0..1}
+      foodSources: {type: xsd:string, cardinality: 0..*}
+      recommendedIntake: {type: xsd:float, cardinality: 0..1}
+
+  technique:
+    description: A preparation, cooking, or processing method that modifies food properties, safety, or nutrient content.
+    attributes:
+      name: {type: xsd:string, cardinality: 1}
+      temperatureRange: {type: xsd:string, cardinality: 0..1}
+      duration: {type: xsd:string, cardinality: 0..1}
+      impactOnNutrients: {type: xsd:string, cardinality: 0..1}
+      equipment: {type: xsd:string, cardinality: 0..1}
+      sustainabilityImpact: {type: xsd:string, cardinality: 0..1}
+
+  dietaryGuideline:
+    description: An official recommendation or rule that specifies how foods or nutrients should be consumed for optimal health and sustainability.
+    attributes:
+      statement: {type: xsd:string, cardinality: 1}
+      focus: {type: xsd:string, cardinality: 0..1}
+      justification: {type: xsd:string, cardinality: 0..1}
+      relatedHealthOutcome: {type: xsd:string, cardinality: 0..*}
+
+  healthOutcome:
+    description: A measurable health effect or condition influenced by dietary factors, nutrients, or behaviors.
+    attributes:
+      name: {type: xsd:string, cardinality: 1}
+      category: {type: xsd:string, cardinality: 0..1}
+      evidenceLevel: {type: xsd:string, cardinality: 0..1}
+      associatedNutrients: {type: xsd:string, cardinality: 0..*}
+      associatedFoods: {type: xsd:string, cardinality: 0..*}
+      mechanismOfAction: {type: xsd:string, cardinality: 0..1}
+
+  environmentImpact:
+    description: A quantified environmental effect associated with a food item, process, or dietary recommendation.
+    attributes:
+      name: {type: xsd:string, cardinality: 1}
+      impactCategory: {type: xsd:string, cardinality: 1}
+      value: {type: xsd:float, cardinality: 1}
+      unit: {type: xsd:string, cardinality: 1}
+
+relations:
+
+  hasNutrient:
+    domain: ingredient
+    range: nutrient
+    description: The ingredient contains or is a source of the nutrient.
+    cardinality: "0..* -> 1..*"
+
+  usesTechnique:
+    domain: ingredient
+    range: technique
+    description: This food is typically prepared or processed with the technique.
+    cardinality: "0..* -> 0..*"
+
+  hasGuideline:
+    domain: ingredient
+    range: dietaryGuideline
+    description: A recommendation applies to this ingredient or food.
+    cardinality: "0..* -> 1..*"
+
+  recommendsTechnique:
+    domain: dietaryGuideline
+    range: technique
+    description: The guideline recommends or contraindicates a technique.
+    cardinality: "0..* -> 0..*"
+
+  aimsToImprove:
+    domain: dietaryGuideline
+    range: healthOutcome
+    description: Intended health outcome the guideline targets.
+    cardinality: "0..* -> 0..*"
+
+  decreasesRiskOf:
+    domain: nutrient
+    range: healthOutcome
+    description: Higher status or intake is associated with lower risk.
+    cardinality: "0..* -> 0..*"
+
+  increasesRiskOf:
+    domain: nutrient
+    range: healthOutcome
+    description: Higher status or intake is associated with higher risk.
+    cardinality: "0..* -> 0..*"
+
+  associatedWithOutcome:
+    domain: ingredient
+    range: healthOutcome
+    description: Food is positively or negatively associated with a health outcome.
+    cardinality: "0..* -> 0..*"
+
+  hasEnvironmentalImpact:
+    domain: ingredient
+    range: environmentImpact
+    description: Ingredient has one or more environmental impact records.
+    cardinality: "0..* -> 1..1"
+
+  guidelineTargetsImpact:
+    domain: dietaryGuideline
+    range: environmentImpact
+    description: Guideline aims to reduce or manage a particular environmental impact.
+    cardinality: "0..* -> 0..*"
+
+  decreasesImpactCategory:
+    domain: technique
+    range: environmentImpact
+    description: Technique tends to lower a specific environmental impact (e.g., less energy use).
+    cardinality: "0..* -> 0..*"
+
+  increasesImpactCategory:
+    domain: technique
+    range: environmentImpact
+    description: Technique tends to raise a specific environmental impact.
+    cardinality: "0..* -> 0..*"
