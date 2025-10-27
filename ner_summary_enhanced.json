@@ -1,0 +1,39 @@
+{
+  "total_chunks": 134,
+  "total_unique_entities": 762,
+  "total_occurrences": 4169,
+  "entities_by_category": {
+    "dietaryGuideline": 138,
+    "ingredient": 325,
+    "nutrient": 207,
+    "environmentImpact": 54,
+    "technique": 24,
+    "healthOutcome": 16
+  },
+  "most_common_entities": {
+    "intake": 263,
+    "nutrition": 162,
+    "vitamin": 133,
+    "fat": 121,
+    "consumption": 119,
+    "recommended": 106,
+    "saturated fat": 92,
+    "recommendations": 81,
+    "impact": 77,
+    "nutrient": 73,
+    "meat": 61,
+    "sugar": 52,
+    "fatty": 52,
+    "fish": 52,
+    "fatty acids": 49,
+    "environmental": 46,
+    "vegetables": 46,
+    "recommended intake": 42,
+    "nutrition recommendations": 41,
+    "protein": 41
+  },
+  "classification_methods": {
+    "fallback": 2301,
+    "pattern": 1868
+  }
+}
