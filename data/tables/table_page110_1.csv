@@ -1,6 +1,7 @@
 0,1,2,3,4
 Appendix 11c. Average requirements for minerals by age group,,,,
-Age group,Calcium mg,Iron mg,Zinc2 mg,Copper µg
+Age group,Calcium,Iron,Zinc2,Copper
+,mg,mg,mg,µg
 ≤ 6 kk1,96,,,160
 7–11 months,2503,8,2.5,180
 1–3 years,400,6,3.8,260

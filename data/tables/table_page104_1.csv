@@ -1,6 +1,7 @@
 0,1,2,3,4,5,6
 by age group,,,,,,
-Age group,Vitamin A RE2,Vitamin D µg3,Vitamin E α-TE4*,Vitamin K µg*,Choline mg*,Vitamin C mg5
+Age group,Vitamin A,Vitamin D,Vitamin E,Vitamin K,Choline,Vitamin C
+,RE2,µg3,α-TE4*,µg*,mg*,mg5
 ≤ 6 months1,,,4,,120,305
 7–11,250,10,5,10,170,305
 months,,,,,,

@@ -1,6 +1,11 @@
 0,1,2,3,4,5
-women and men aged 18 to 741.,,Women,,Men,
-Nutrient,Recommen- dation,Intake,Those reaching the recommen- ded intake (%)2,Intake,Those reaching the recommen- ded intake (%)2
+women and men aged 18 to 741.,,,,,
+,,Women,,Men,
+Nutrient,Recommen-,Intake,Those,Intake,Those
+,dation,,reaching the,,reaching the
+,,,recommen-,,recommen-
+,,,ded intake,,ded intake
+,,,(%)2,,(%)2
 "Fat, E%",25–40,38,68,39,65
 "Saturated fatty acids,",< 10,14,6,15,3
 E%,,,,,

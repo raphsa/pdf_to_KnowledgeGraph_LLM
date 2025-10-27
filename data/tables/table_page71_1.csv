@@ -1,8 +1,19 @@
 0,1,2
 Food group,Recommended intake,Things to note4
-Red meat,Maximum 350 g of cooked meat and processed meat per week (approximately 500 g raw meat),A lower consumption is recommended in terms of the environment.
-Prosessoitu liha,As little as possible,"Applies to both red meat and poultry products. Based on health evidence, consumption should be minimised due to high saturated fat, salt, nitrite and phosphate."
+Red meat,Maximum 350 g of cooked,A lower consumption is
+,meat and processed meat,recommended in terms of the
+,per week (approximately,environment.
+,500 g raw meat),
+Prosessoitu liha,As little as possible,Applies to both red meat and
+,,poultry products. Based on health
+,,"evidence, consumption should be"
+,,minimised due to high saturated
+,,"fat, salt, nitrite and phosphate."
 Eggs,1,Up to one egg per day.
 "Sweets, sugar-",As little as possible,
 sweetened beverages,,
-Alcohol,As little as possible,"No safe consumption level. Not recommended at all for children, adolescents, pregnant women, lactating nursing mothers, and older people."
+Alcohol,As little as possible,No safe consumption level. Not
+,,"recommended at all for children,"
+,,"adolescents, pregnant women,"
+,,"lactating nursing mothers, and"
+,,older people.

@@ -1,6 +1,7 @@
 0,1,2,3,4,5,6,7,8
 group,,,,,,,,
-Age group,Phosphorus mg2,Potassium mg,Magnesium mg,Iodine µg,Selenium µg,Fluoride mg,Manganese mg,Molybdenum µg
+Age group,Phosphorus,Potassium,Magnesium,Iodine,Selenium,Fluoride,Manganese,Molybdenum
+,mg2,mg,mg,µg,µg,mg,mg,µg
 ≤ 6 kk1,,320,20,64–72,10,,9.6 µg,
 7–11  months,140,600,64,64–72,15,0.4,0.02–0.4,7
 1–3 years,200,700,136,80,15,0.5,0.5,10

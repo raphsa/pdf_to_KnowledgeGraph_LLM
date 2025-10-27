@@ -1,8 +1,10 @@
 0,1,2,3,4,5,6,7,8
 Appendix 10d. Adequate intakes of minerals by age group,,,,,,,,
-Age group,Phosphorus mg2,Potassium mg,Magne sium mg,Iodine µg,Selenium µg,Fluoride mg5,Manganese mg,Molybdenum µg
+Age group,Phosphorus,Potassium,Magne sium,Iodine,Selenium,Fluoride,Manganese,Molybdenum
+,mg2,mg,mg,µg,µg,mg5,mg,µg
 ≤ 6 months1,,400,25,80–904,10,,12,
-7–11 months,170,700,803,80–904,20,0.4,0.02– 0.56,10
+7–11 months,170,700,803,80–904,20,0.4,0.02–,10
+,,,,,,,0.56,
 1–3 years,250,850,170,100,20,0.7,0.5,15
 4–6 years,440,"1,150",230,100,25,1.0,1.0,20
 7–10 years,440,"1,800",230,100,40,1.5,1.5,30
