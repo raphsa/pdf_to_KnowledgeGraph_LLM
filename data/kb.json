@@ -1,0 +1,546 @@
+[
+  {
+    "id": "ex:foodgroup.whole_grains",
+    "label": "Whole grains",
+    "class": "foodGroup",
+    "aliases": [
+      "Whole grains",
+      "whole grain",
+      "whole grain cereals",
+      "whole grain products",
+      "whole grains product",
+      "whole-grain",
+      "wholegrain",
+      "wholegrain products"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.vegetables",
+    "label": "Vegetables",
+    "class": "foodGroup",
+    "aliases": [
+      "Vegetables",
+      "veg",
+      "vegetable"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.berries_and_fruits",
+    "label": "Berries and fruits",
+    "class": "foodGroup",
+    "aliases": [
+      "Berries and fruits",
+      "berries",
+      "berries & fruits",
+      "berries and fruits",
+      "fruit",
+      "fruits"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.potatoes",
+    "label": "Potatoes",
+    "class": "foodGroup",
+    "aliases": [
+      "Potatoes",
+      "boiled potatoes",
+      "potato"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.legumes",
+    "label": "Legumes",
+    "class": "foodGroup",
+    "aliases": [
+      "Legumes",
+      "beans",
+      "broad bean",
+      "hummus",
+      "legume products",
+      "lentils",
+      "peas",
+      "pulses",
+      "soy",
+      "soya"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.nuts_and_seeds",
+    "label": "Nuts and seeds",
+    "class": "foodGroup",
+    "aliases": [
+      "Nuts and seeds",
+      "nuts",
+      "seeds",
+      "tree nuts"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.fish",
+    "label": "Fish",
+    "class": "foodGroup",
+    "aliases": [
+      "Fish",
+      "fatty fish",
+      "fish and seafood",
+      "lean fish",
+      "seafood"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.red_meat",
+    "label": "Red meat",
+    "class": "foodGroup",
+    "aliases": [
+      "Red meat",
+      "beef",
+      "beef, pork and lamb",
+      "game meat",
+      "lamb",
+      "pork",
+      "red and processed meat"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.processed_meat",
+    "label": "Processed meat",
+    "class": "foodGroup",
+    "aliases": [
+      "Processed meat",
+      "bacon",
+      "cold cuts",
+      "frankfurters",
+      "ham",
+      "meat and sausage cold cuts",
+      "meat products",
+      "processed red meat",
+      "salami",
+      "sausages"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.poultry",
+    "label": "Poultry",
+    "class": "foodGroup",
+    "aliases": [
+      "Poultry",
+      "chicken",
+      "duck",
+      "poultry meat",
+      "processed poultry",
+      "turkey"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.milk_and_dairy_products",
+    "label": "Milk and dairy products",
+    "class": "foodGroup",
+    "aliases": [
+      "Milk and dairy products",
+      "buttermilk",
+      "cheese",
+      "dairy",
+      "milk and dairy",
+      "milk products",
+      "yoghurt",
+      "yogurt"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.eggs",
+    "label": "Eggs",
+    "class": "foodGroup",
+    "aliases": [
+      "Eggs",
+      "egg"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.dietary_fats",
+    "label": "Dietary fats",
+    "class": "foodGroup",
+    "aliases": [
+      "Dietary fats",
+      "butter",
+      "canola oil",
+      "coconut oil",
+      "fat spreads",
+      "fats and oils",
+      "margarines",
+      "olive oil",
+      "palm oil",
+      "sunflower oil",
+      "tropical oils",
+      "vegetable fat spreads",
+      "vegetable oils"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.sugary_foods",
+    "label": "Sugary foods",
+    "class": "foodGroup",
+    "aliases": [
+      "Sugary foods",
+      "biscuits",
+      "candy",
+      "chocolate",
+      "confectionery",
+      "foods high in free sugar",
+      "ice cream",
+      "sweet pastries",
+      "sweets"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.beverages",
+    "label": "Beverages",
+    "class": "foodGroup",
+    "aliases": [
+      "Beverages",
+      "berry juice",
+      "drinks",
+      "fruit juice",
+      "juice",
+      "juices",
+      "oat drink",
+      "plant drink",
+      "sodas",
+      "soft drinks",
+      "vegetable drink"
+    ]
+  },
+  {
+    "id": "ex:foodgroup.alcohol",
+    "label": "Alcohol",
+    "class": "foodGroup",
+    "aliases": [
+      "Alcohol",
+      "alcoholic beverages",
+      "beer",
+      "spirits",
+      "wine"
+    ]
+  },
+  {
+    "id": "ex:fooditem.beef",
+    "label": "Beef",
+    "class": "foodItem",
+    "aliases": [
+      "Beef",
+      "beef meat",
+      "beef steak",
+      "ground beef"
+    ]
+  },
+  {
+    "id": "ex:fooditem.pork",
+    "label": "Pork",
+    "class": "foodItem",
+    "aliases": [
+      "Pork",
+      "minced pork",
+      "pork chop",
+      "pork meat"
+    ]
+  },
+  {
+    "id": "ex:fooditem.lamb",
+    "label": "Lamb",
+    "class": "foodItem",
+    "aliases": [
+      "Lamb",
+      "lamb meat",
+      "mutton"
+    ]
+  },
+  {
+    "id": "ex:fooditem.salmon",
+    "label": "Salmon",
+    "class": "foodItem",
+    "aliases": [
+      "Salmon",
+      "atlantic salmon",
+      "farmed salmon",
+      "salmon fillet"
+    ]
+  },
+  {
+    "id": "ex:fooditem.perch",
+    "label": "Perch",
+    "class": "foodItem",
+    "aliases": [
+      "Perch",
+      "fried perch"
+    ]
+  },
+  {
+    "id": "ex:fooditem.herring",
+    "label": "Herring",
+    "class": "foodItem",
+    "aliases": [
+      "Herring",
+      "baltic herring",
+      "herring fillet"
+    ]
+  },
+  {
+    "id": "ex:fooditem.bream",
+    "label": "Bream",
+    "class": "foodItem",
+    "aliases": [
+      "Bream",
+      "wild bream"
+    ]
+  },
+  {
+    "id": "ex:fooditem.vendace",
+    "label": "Vendace",
+    "class": "foodItem",
+    "aliases": [
+      "Vendace",
+      "wild vendace"
+    ]
+  },
+  {
+    "id": "ex:fooditem.rye_bread",
+    "label": "Rye bread",
+    "class": "foodItem",
+    "aliases": [
+      "Rye bread",
+      "rye loaf",
+      "wholegrain rye bread"
+    ]
+  },
+  {
+    "id": "ex:fooditem.oat_porridge",
+    "label": "Oat porridge",
+    "class": "foodItem",
+    "aliases": [
+      "Oat porridge",
+      "oatmeal",
+      "porridge"
+    ]
+  },
+  {
+    "id": "ex:technique.boiling",
+    "label": "Boiling",
+    "class": "technique",
+    "aliases": [
+      "Boiling",
+      "boil",
+      "boiled"
+    ]
+  },
+  {
+    "id": "ex:technique.frying",
+    "label": "Frying",
+    "class": "technique",
+    "aliases": [
+      "Frying",
+      "fried",
+      "fry",
+      "pan-frying",
+      "panfrying"
+    ]
+  },
+  {
+    "id": "ex:technique.baking",
+    "label": "Baking",
+    "class": "technique",
+    "aliases": [
+      "Baking",
+      "bake",
+      "baked"
+    ]
+  },
+  {
+    "id": "ex:nutrient.fat",
+    "label": "Fat",
+    "class": "nutrient",
+    "aliases": [
+      "Fat",
+      "dietary fat",
+      "fats"
+    ]
+  },
+  {
+    "id": "ex:nutrient.saturated_fat",
+    "label": "Saturated fat",
+    "class": "nutrient",
+    "aliases": [
+      "Saturated fat",
+      "saturated fatty acids",
+      "saturates",
+      "solid fat"
+    ]
+  },
+  {
+    "id": "ex:nutrient.monounsaturated_fatty_acids",
+    "label": "Monounsaturated fatty acids",
+    "class": "nutrient",
+    "aliases": [
+      "Monounsaturated fatty acids",
+      "monounsaturated fat"
+    ]
+  },
+  {
+    "id": "ex:nutrient.polyunsaturated_fatty_acids",
+    "label": "Polyunsaturated fatty acids",
+    "class": "nutrient",
+    "aliases": [
+      "Polyunsaturated fatty acids",
+      "n-3 fatty acids",
+      "polyunsaturated fat"
+    ]
+  },
+  {
+    "id": "ex:nutrient.carbohydrates",
+    "label": "Carbohydrates",
+    "class": "nutrient",
+    "aliases": [
+      "Carbohydrates",
+      "carbohydrate",
+      "carbs"
+    ]
+  },
+  {
+    "id": "ex:nutrient.dietary_fibre",
+    "label": "Dietary fibre",
+    "class": "nutrient",
+    "aliases": [
+      "Dietary fibre",
+      "dietary fiber",
+      "fiber",
+      "fibre"
+    ]
+  },
+  {
+    "id": "ex:nutrient.protein",
+    "label": "Protein",
+    "class": "nutrient",
+    "aliases": [
+      "Protein",
+      "proteins"
+    ]
+  },
+  {
+    "id": "ex:nutrient.free_sugar",
+    "label": "Free sugar",
+    "class": "nutrient",
+    "aliases": [
+      "Free sugar",
+      "added sugar",
+      "free sugars",
+      "sugar",
+      "sugar-sweetened"
+    ]
+  },
+  {
+    "id": "ex:nutrient.sodium_salt",
+    "label": "Sodium (salt)",
+    "class": "nutrient",
+    "aliases": [
+      "Sodium (salt)",
+      "salt",
+      "sodium"
+    ]
+  },
+  {
+    "id": "ex:nutrient.vitamin_d",
+    "label": "Vitamin D",
+    "class": "nutrient",
+    "aliases": [
+      "Vitamin D",
+      "cholecalciferol",
+      "vit d"
+    ]
+  },
+  {
+    "id": "ex:nutrient.vitamin_e",
+    "label": "Vitamin E",
+    "class": "nutrient",
+    "aliases": [
+      "Vitamin E",
+      "alpha-tocopherol",
+      "tocopherol",
+      "tocopherols",
+      "vit e"
+    ]
+  },
+  {
+    "id": "ex:nutrient.vitamin_c",
+    "label": "Vitamin C",
+    "class": "nutrient",
+    "aliases": [
+      "Vitamin C",
+      "ascorbic acid",
+      "vitamin c"
+    ]
+  },
+  {
+    "id": "ex:nutrient.folate",
+    "label": "Folate",
+    "class": "nutrient",
+    "aliases": [
+      "Folate",
+      "folic acid",
+      "vitamin b9"
+    ]
+  },
+  {
+    "id": "ex:nutrient.vitamin_b12",
+    "label": "Vitamin B12",
+    "class": "nutrient",
+    "aliases": [
+      "Vitamin B12",
+      "cobalamin",
+      "vit b12"
+    ]
+  },
+  {
+    "id": "ex:nutrient.calcium",
+    "label": "Calcium",
+    "class": "nutrient",
+    "aliases": [
+      "Calcium",
+      "ca"
+    ]
+  },
+  {
+    "id": "ex:nutrient.iron",
+    "label": "Iron",
+    "class": "nutrient",
+    "aliases": [
+      "Iron",
+      "fe",
+      "heme iron"
+    ]
+  },
+  {
+    "id": "ex:nutrient.iodine",
+    "label": "Iodine",
+    "class": "nutrient",
+    "aliases": [
+      "Iodine",
+      "iodide"
+    ]
+  },
+  {
+    "id": "ex:nutrient.selenium",
+    "label": "Selenium",
+    "class": "nutrient",
+    "aliases": [
+      "Selenium",
+      "se"
+    ]
+  },
+  {
+    "id": "ex:nutrient.zinc",
+    "label": "Zinc",
+    "class": "nutrient",
+    "aliases": [
+      "Zinc",
+      "zn"
+    ]
+  }
+]
