@@ -1,8 +1,8 @@
 [
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 5,
+    "section": "Preface",
     "text_preview": "The aim of the nutrition recommendations is to promote public health. The recommendations are widely...",
     "spacy_entities": [
       {
@@ -464,8 +464,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 6,
+    "section": "Preface",
     "text_preview": "High-quality monitoring of food consumption has a long tradition in Finland. In the recommendations,...",
     "spacy_entities": [
       {
@@ -1065,8 +1065,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 7,
+    "section": "Preface",
     "text_preview": "Recommendations working group Maijaliisa Erkkola, Chair, Professor, University of Helsinki Ursula Sc...",
     "spacy_entities": [
       {
@@ -1636,8 +1636,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 8,
+    "section": "Glossary",
     "text_preview": "Added sugar Sugar added to food and food products at home or in the food industry or used as such. C...",
     "spacy_entities": [
       {
@@ -1977,8 +1977,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 9,
+    "section": "Glossary",
     "text_preview": "Food competence Knowledge and skills about the origin, routes and quality of food, cooking methods, ...",
     "spacy_entities": [
       {
@@ -2124,8 +2124,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 10,
+    "section": "Glossary",
     "text_preview": "Local food Food produced and processed using ingredients derived from the local region and marketed ...",
     "spacy_entities": [
       {
@@ -2459,8 +2459,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 11,
+    "section": "Glossary",
     "text_preview": "Saturated fat Fat rich in saturated fatty acids. Saturated fat is solid at room temperature. It is p...",
     "spacy_entities": [
       {
@@ -3286,8 +3286,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 12,
+    "section": "BASIS AND INTENDED USE",
     "text_preview": "Research evidence as the basis for nutrition recommendations. SUSTAINABLE HEALTH FROM FOOD 12 THL  •...",
     "spacy_entities": [
       {
@@ -3402,8 +3402,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 13,
+    "section": "Nutrition recommendations – a scientific basis for health promotion",
     "text_preview": "f The main objective of these nutrition recommendations is to promote the health of the population t...",
     "spacy_entities": [
       {
@@ -3845,8 +3845,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 14,
+    "section": "Nutrition recommendations – a scientific basis for health promotion",
     "text_preview": "Figure 1. The health and sustainability goals of the nutrition recommendations are achieved through ...",
     "spacy_entities": [
       {
@@ -4060,8 +4060,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 15,
+    "section": "Nutrition recommendations – a scientific basis for health promotion",
     "text_preview": "The dietary reference values have been drawn up for the population, taking the variation in nutrient...",
     "spacy_entities": [
       {
@@ -4708,8 +4708,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 16,
+    "section": "Features of finnish food consumption and nutrition",
     "text_preview": "f Diets and nutrition vary by individual and population group.  f Finnish food consumption and nutri...",
     "spacy_entities": [
       {
@@ -4978,8 +4978,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 17,
+    "section": "Features of finnish food consumption and nutrition",
     "text_preview": "Food services are an integral part of the Finnish food culture At least one in two Finnish working-a...",
     "spacy_entities": [
       {
@@ -5255,8 +5255,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 18,
+    "section": "Features of finnish food consumption and nutrition",
     "text_preview": "Figure 2. Finnish women and men eat less vegetables, berries and fruits than recommended. Source: Th...",
     "spacy_entities": [
       {
@@ -5407,8 +5407,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 19,
+    "section": "Features of finnish food consumption and nutrition",
     "text_preview": "Figure 4. Finnish women and men eat more red and processed meat than recommended. Men eat red and pr...",
     "spacy_entities": [
       {
@@ -5883,8 +5883,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 20,
+    "section": "Features of finnish food consumption and nutrition",
     "text_preview": "Sociodemographic and regional differences in food consumption and nutrient intake Population group r...",
     "spacy_entities": [
       {
@@ -6216,8 +6216,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 21,
+    "section": "Health effects of foods",
     "text_preview": "f For Finns, the most significant health-related nutritional challenges are high intake of salt and ...",
     "spacy_entities": [
       {
@@ -6937,8 +6937,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 22,
+    "section": "Health effects of foods",
     "text_preview": "Figure 5. Almost all Finns exceed recommended dietary salt intake levels. Source: The national FinDi...",
     "spacy_entities": [
       {
@@ -7181,8 +7181,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 23,
+    "section": "Health effects of foods",
     "text_preview": "Balance of energy intake and expenditure  f In terms of health, the recommended body mass index (BMI...",
     "spacy_entities": [
       {
@@ -7454,8 +7454,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 24,
+    "section": "Health effects of foods",
     "text_preview": "Health-promoting food choices are the foundation of weight management A health-promoting diet can be...",
     "spacy_entities": [
       {
@@ -7657,8 +7657,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 25,
+    "section": "Health effects of foods",
     "text_preview": "Exercise and sleep support weight management Regular exercise supports the natural regulation of eat...",
     "spacy_entities": [
       {
@@ -7731,8 +7731,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 26,
+    "section": "Environmental impact of food",
     "text_preview": "f Finnish food consumption causes environmental impacts both in Finland and abroad.  f Environmental...",
     "spacy_entities": [
       {
@@ -8259,8 +8259,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 27,
+    "section": "Environmental impact of food",
     "text_preview": "Figure 6.  Replacing animal protein with plant protein reduces the climate impact of the diet and af...",
     "spacy_entities": [
       {
@@ -8718,8 +8718,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 28,
+    "section": "Environmental impact of food",
     "text_preview": "Diets and food products also have other local environmental impacts, which may also differ due to th...",
     "spacy_entities": [
       {
@@ -9032,8 +9032,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 29,
+    "section": "Environmental impact of food",
     "text_preview": "Figure 7. Environmental impacts of food production in agricultural and aquatic ecosystems and their ...",
     "spacy_entities": [
       {
@@ -9168,8 +9168,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 30,
+    "section": "NUTRITION RECOMMENDATIONS",
     "text_preview": "Healthy and environmentally sustainable food. SUSTAINABLE HEALTH FROM FOOD 30 THL  •  DIRECTIONS 15 ...",
     "spacy_entities": [
       {
@@ -9287,8 +9287,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 31,
+    "section": "Recommended intakes of energy and nutrients",
     "text_preview": "f The following provides a brief overview of nutrient recommendations, focusing on energy and energy...",
     "spacy_entities": [
       {
@@ -9623,8 +9623,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 31,
+    "section": "Energy and energy-yielding nutrients",
     "text_preview": "A long-term energy intake that exceeds or falls short of energy requirements is detrimental to healt...",
     "spacy_entities": [
       {
@@ -9882,8 +9882,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 32,
+    "section": "Energy and energy-yielding nutrients",
     "text_preview": "carbohydrates and protein, 8 kJ/g for fibre and 37 kJ/g for fat. Alcohol contains 29 kJ/g of energy,...",
     "spacy_entities": [
       {
@@ -10521,8 +10521,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 33,
+    "section": "Carbohydrates and fibre",
     "text_preview": "The recommended intake of carbohydrates is 45 to 60% of the total daily energy intake (E%). The reco...",
     "spacy_entities": [
       {
@@ -11093,8 +11093,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 33,
+    "section": "Fat",
     "text_preview": "The recommendations for fat intake emphasise quality, that is, the fatty acid composition of the die...",
     "spacy_entities": [
       {
@@ -11732,8 +11732,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 34,
+    "section": "Protein.",
     "text_preview": "The recommended protein intake is 10 to 20 E%. This ensures an adequate intake of essential amino ac...",
     "spacy_entities": [
       {
@@ -12431,8 +12431,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 35,
+    "section": "Sodium (salt)",
     "text_preview": "The recommended intake of sodium and salt derived from sodium is not based on the body’s essential n...",
     "spacy_entities": [
       {
@@ -12886,8 +12886,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 35,
+    "section": "Vitamin D",
     "text_preview": "Among other things, vitamin D affects the functioning of body’s tissues, calcium metabolism and the ...",
     "spacy_entities": [
       {
@@ -13169,8 +13169,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 36,
+    "section": "Vitamin D",
     "text_preview": "The intake of vitamin D, both via synthesis in the skin and from food, is assessed by the concentrat...",
     "spacy_entities": [
       {
@@ -13415,8 +13415,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 36,
+    "section": "Vitamin E",
     "text_preview": "The main function of vitamin E is to act as an antioxidant. Its sources include vegetable oils and s...",
     "spacy_entities": [
       {
@@ -13692,8 +13692,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 36,
+    "section": "Vitamin C",
     "text_preview": "Vitamin C functions as an antioxidant in the body. It is needed in collagen synthesis, for example, ...",
     "spacy_entities": [
       {
@@ -14055,8 +14055,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 36,
+    "section": "Folate",
     "text_preview": "Folate is needed in the body in the synthesis of nucleic acids (DNA, RNA), for example. Folate is al...",
     "spacy_entities": [
       {
@@ -14181,8 +14181,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 37,
+    "section": "Folate",
     "text_preview": "methionine. An adequate intake of folate is necessary for the production of red blood cells, for exa...",
     "spacy_entities": [
       {
@@ -14473,8 +14473,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 37,
+    "section": "Vitamin B12 (cobalamin).",
     "text_preview": "An adequate intake of vitamin B12 is essential for normal development, nervous system function and r...",
     "spacy_entities": [
       {
@@ -14838,8 +14838,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 37,
+    "section": "Calcium",
     "text_preview": "Calcium is the most common mineral in the body. Among other things, it plays a key role in bone and ...",
     "spacy_entities": [
       {
@@ -15033,8 +15033,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 38,
+    "section": "Calcium",
     "text_preview": "include dairy products, fish, cruciferous vegetables and foods fortified with calcium. Calcium is be...",
     "spacy_entities": [
       {
@@ -15387,8 +15387,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 38,
+    "section": "Iron",
     "text_preview": "Iron binds oxygen to haemoglobin in red blood cells, which transports oxygen from the lungs to the t...",
     "spacy_entities": [
       {
@@ -15883,8 +15883,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 38,
+    "section": "Iodine",
     "text_preview": "Iodine is an essential constituent of the thyroid hormones thyroxine and triiodothyronine. Among oth...",
     "spacy_entities": [
       {
@@ -16046,8 +16046,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 39,
+    "section": "Iodine",
     "text_preview": "The risk groups for iodine deficiency are those who consume few or no dairy and fish products. Those...",
     "spacy_entities": [
       {
@@ -16303,8 +16303,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 39,
+    "section": "Selenium",
     "text_preview": "The main function of selenium is to act as an antioxidant. In food, the content of selenium is stron...",
     "spacy_entities": [
       {
@@ -16666,8 +16666,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 39,
+    "section": "Zinc",
     "text_preview": "Zinc has essential functions in all human cells. It affects the activity of numerous enzymes in the ...",
     "spacy_entities": [
       {
@@ -17019,8 +17019,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 40,
+    "section": "Zinc",
     "text_preview": "Recommended nutrient reference values Appendices 10 to 12 contain the dietary reference values for v...",
     "spacy_entities": [
       {
@@ -17489,8 +17489,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 41,
+    "section": "Zinc",
     "text_preview": "and Medicine (NASEM) and the European Food Safety Authority (EFSA). The average weight of the Nordic...",
     "spacy_entities": [
       {
@@ -18158,8 +18158,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 42,
+    "section": "Recommended food choices",
     "text_preview": "f Food-based dietary guidelines focus on the nutritional adequacy and health effects of diets, and a...",
     "spacy_entities": [
       {
@@ -18515,8 +18515,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 43,
+    "section": "Breastfeeding and introduction of complementary foods",
     "text_preview": "Definition: Exclusive breastfeeding refers to breast milk as the sole source of infant nutrition. Pa...",
     "spacy_entities": [
       {
@@ -18797,8 +18797,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 44,
+    "section": "Cereals and cereal products",
     "text_preview": "Definition: Cereals include edible grass seeds such as wheat, rye, oats, barley, rice and maize. The...",
     "spacy_entities": [
       {
@@ -19541,8 +19541,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 45,
+    "section": "Cereals and cereal products",
     "text_preview": "RECOMMENDATION • Cereal products should mainly be whole grains with a recommended intake of at least...",
     "spacy_entities": [
       {
@@ -19880,8 +19880,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 46,
+    "section": "Vegetables, berries and fruits",
     "text_preview": "Definition: In food-based dietary guidelines, vegetables refer to vegetables, root vegetables and mu...",
     "spacy_entities": [
       {
@@ -20535,8 +20535,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 47,
+    "section": "Vegetables, berries and fruits",
     "text_preview": "RECOMMENDATION • Consuming a wide variety of vegetables, berries and fruits – at least 500 to 800 gr...",
     "spacy_entities": [
       {
@@ -20988,8 +20988,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 48,
+    "section": "Potatoes",
     "text_preview": "Nutrient content and consumption: Potatoes contain a moderate amount of carbohydrates and protein. T...",
     "spacy_entities": [
       {
@@ -21435,8 +21435,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 49,
+    "section": "Legumes and legume products.",
     "text_preview": "Definition: Legumes belong to the family of leguminous plants. The most commonly used legumes are pe...",
     "spacy_entities": [
       {
@@ -22031,8 +22031,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 50,
+    "section": "Legumes and legume products.",
     "text_preview": "RECOMMENDATION • Legumes are a good choice for health and the environment. • It is advisable to grad...",
     "spacy_entities": [
       {
@@ -22422,8 +22422,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 51,
+    "section": "Nuts and seeds.",
     "text_preview": "Definition: Nuts and seeds include tree nuts, peanuts and seeds. Commonly used nuts and seeds includ...",
     "spacy_entities": [
       {
@@ -23259,8 +23259,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 52,
+    "section": "Fish",
     "text_preview": "Definition: Fish includes lean and fatty fish species as well as shellfish, such as crayfish. Nutrie...",
     "spacy_entities": [
       {
@@ -23976,8 +23976,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 53,
+    "section": "Red meat",
     "text_preview": "Definition: Red meat refers to the meat of cattle, pigs, sheep, goats, deer, reindeer and moose, as ...",
     "spacy_entities": [
       {
@@ -24558,8 +24558,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 54,
+    "section": "Red meat",
     "text_preview": "RECOMMENDATION • For health reasons, a maximum of 350 grams of cooked beef, pork and lamb is recomme...",
     "spacy_entities": [
       {
@@ -24892,8 +24892,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 54,
+    "section": "Poultry.",
     "text_preview": "Definition: Poultry mainly refers to chicken, turkey and duck. Processed poultry meat means sausages...",
     "spacy_entities": [
       {
@@ -25455,8 +25455,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 55,
+    "section": "Poultry.",
     "text_preview": "RECOMMENDATION • Processed poultry should be consumed as little as possible. • Reducing the consumpt...",
     "spacy_entities": [
       {
@@ -25866,8 +25866,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 55,
+    "section": "Milk and dairy products",
     "text_preview": "Definition: Dairy products include milk, buttermilk, yogurt, curd milk, quark, cheeses and other dai...",
     "spacy_entities": [
       {
@@ -26261,8 +26261,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 56,
+    "section": "Milk and dairy products",
     "text_preview": "RECOMMENDATION • A daily consumption of 350 to 500 grams of fat-free or low-fat dairy products is su...",
     "spacy_entities": [
       {
@@ -26917,8 +26917,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 57,
+    "section": "Eggs",
     "text_preview": "Nutrient content and consumption: Eggs contain good-quality protein and all the essential nutrients ...",
     "spacy_entities": [
       {
@@ -27211,8 +27211,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 58,
+    "section": "Dietary fats",
     "text_preview": "Definition: Dietary fats are fats of animal or vegetable origin or their mixtures which are used in ...",
     "spacy_entities": [
       {
@@ -27899,8 +27899,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 59,
+    "section": "Dietary fats",
     "text_preview": "RECOMMENDATION • A minimum of 25 grams of vegetable oils should be used daily to ensure an adequate ...",
     "spacy_entities": [
       {
@@ -28249,8 +28249,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 60,
+    "section": "Sugary foods",
     "text_preview": "Definition: Sugary foods include sweets, chocolate and other foods high in free sugar, such as sweet...",
     "spacy_entities": [
       {
@@ -28575,8 +28575,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 61,
+    "section": "Beverages",
     "text_preview": "Definition and consumption: In these guidelines, beverages include coffee, tea, sugary beverages and...",
     "spacy_entities": [
       {
@@ -28815,8 +28815,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 62,
+    "section": "Beverages",
     "text_preview": "RECOMMENDATION • Tap water is the recommended recommended beverage of choice. • A moderate consumpti...",
     "spacy_entities": [
       {
@@ -29131,8 +29131,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 63,
+    "section": "Alcohol",
     "text_preview": "Definition: Alcohol, or ethanol (100% alcohol), is found in beers, wines, spirits and drink mixtures...",
     "spacy_entities": [
       {
@@ -29447,8 +29447,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 64,
+    "section": "Diet composition",
     "text_preview": "f A health-promoting diet combines variety, balance, enjoyment and moderation.  f Such a diet is ric...",
     "spacy_entities": [
       {
@@ -29718,8 +29718,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 65,
+    "section": "Diet composition",
     "text_preview": "Picture 6. The food pyramid shows the foods at different levels according to the recommended intake ...",
     "spacy_entities": [
       {
@@ -29852,8 +29852,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 66,
+    "section": "Diet composition",
     "text_preview": "Table 3. Recommended dietary changes to promote health. Increase Vegetables Berries and fruits Legum...",
     "spacy_entities": [
       {
@@ -30286,8 +30286,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 67,
+    "section": "Diet composition",
     "text_preview": "Picture 7. The plate model includes a broad bean and vegetable stew as the main dish. A well- balanc...",
     "spacy_entities": [
       {
@@ -30677,8 +30677,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 68,
+    "section": "Diet composition",
     "text_preview": "Animal products such as eggs, meat, fish and dairy products contain nutritionally high-quality prote...",
     "spacy_entities": [
       {
@@ -30906,8 +30906,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 69,
+    "section": "Diet composition",
     "text_preview": "Picture 10. The plate model includes fish steaks with mashed potatoes and vegetables as the main dis...",
     "spacy_entities": [
       {
@@ -31194,8 +31194,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 70,
+    "section": "Diet composition",
     "text_preview": "Table 4. Recommended food choices. Food group Recommended intake Things to note4 Vegetables, berries...",
     "spacy_entities": [
       {
@@ -31880,8 +31880,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 71,
+    "section": "Diet composition",
     "text_preview": "Food group Recommended intake Things to note4 Red meat Maximum 350 g of cooked meat and processed me...",
     "spacy_entities": [
       {
@@ -32388,8 +32388,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 72,
+    "section": "Diet composition",
     "text_preview": "Vegan diet A vegan diet does not include products of animal origin. Vegan diets should contain plent...",
     "spacy_entities": [
       {
@@ -32647,8 +32647,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 73,
+    "section": "Fortification of food products and dietary supplements",
     "text_preview": "f Fortification can be used to improve the nutrient content of foods used to replace other foods or ...",
     "spacy_entities": [
       {
@@ -33119,8 +33119,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 74,
+    "section": "Fortification of food products and dietary supplements",
     "text_preview": "the prevention of non-communicable diseases, nor have they been found to have any other beneficial h...",
     "spacy_entities": [
       {
@@ -33351,8 +33351,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 75,
+    "section": "Fortification of food products and dietary supplements",
     "text_preview": "Table 5. Recommended use of dietary supplements. Dietary supplement Recommended for Often necessary ...",
     "spacy_entities": [
       {
@@ -33692,8 +33692,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 76,
+    "section": "Food safety",
     "text_preview": "f The best way to avoid potentially harmful substances in food is a diverse and varied diet moderate...",
     "spacy_entities": [
       {
@@ -33853,8 +33853,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 77,
+    "section": "Food safety",
     "text_preview": "contain pathogenic microbes even if it looks, smells or tastes fine. To reduce the risk of food pois...",
     "spacy_entities": [
       {
@@ -33981,8 +33981,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 78,
+    "section": "IMPLEMENTATION AND APPLICATION",
     "text_preview": "Knowledge and nutrition health for all. SUSTAINABLE HEALTH FROM FOOD 78 THL  •  DIRECTIONS 15  •  20...",
     "spacy_entities": [
       {
@@ -34074,8 +34074,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 79,
+    "section": "Food education, nutrition counselling and nutrition communication",
     "text_preview": "f Food education, nutrition guidance and nutrition communication are important tools in developing f...",
     "spacy_entities": [
       {
@@ -34281,8 +34281,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 80,
+    "section": "Food education, nutrition counselling and nutrition communication",
     "text_preview": "In food education, it is important to take daily routines into account and support an appropriate me...",
     "spacy_entities": [
       {
@@ -34641,8 +34641,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 81,
+    "section": "Food education, nutrition counselling and nutrition communication",
     "text_preview": "RECOMMENDED MEASURES Effective food education, nutrition guidance and nutrition communication •\tFood...",
     "spacy_entities": [
       {
@@ -34852,8 +34852,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 82,
+    "section": "Application of the nutrition recommendations in food services.",
     "text_preview": "f Food services play a key role in implementing nutrition recommendations as they prepare and provid...",
     "spacy_entities": [
       {
@@ -35111,8 +35111,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 83,
+    "section": "Application of the nutrition recommendations in food services.",
     "text_preview": "The minimum requirements for nutritional quality are used in the planning of food instructions and t...",
     "spacy_entities": [
       {
@@ -35598,8 +35598,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 84,
+    "section": "Application of the nutrition recommendations in food services.",
     "text_preview": "Food serving Food choices that meet the recommendations and portion sizes that follow the plate mode...",
     "spacy_entities": [
       {
@@ -35796,8 +35796,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 85,
+    "section": "Application of the nutrition recommendations in food services.",
     "text_preview": "Security of supply must be taken into account in all operations. Food service operators must draw up...",
     "spacy_entities": [
       {
@@ -35969,8 +35969,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 86,
+    "section": "Application of the nutrition recommendations in food services.",
     "text_preview": "RECOMMENDED MEASURES Implementation of health-promoting, sustainable and responsible food services •...",
     "spacy_entities": [
       {
@@ -36160,8 +36160,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 87,
+    "section": "Food security and nutrition health for all.",
     "text_preview": "f Health-promoting and sustainable diets support all dimensions of human health and well-being.  f T...",
     "spacy_entities": [
       {
@@ -36293,8 +36293,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 88,
+    "section": "Food security and nutrition health for all.",
     "text_preview": "expenditure was 18% for those with the lowest income and 12% for those with the highest income. Seve...",
     "spacy_entities": [
       {
@@ -36445,8 +36445,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 89,
+    "section": "Food security and nutrition health for all.",
     "text_preview": "RECOMMENDED MEASURES Promoting of social sustainability and security of supply •\tEcological sustaina...",
     "spacy_entities": [
       {
@@ -36602,8 +36602,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 90,
+    "section": "Monitoring and evaluation of population nutrition and environmental impacts.",
     "text_preview": "f In Finland, the aim is to move towards a nutritionally adequate food consumption that promotes the...",
     "spacy_entities": [
       {
@@ -37089,8 +37089,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 91,
+    "section": "Monitoring and evaluation of population nutrition and environmental impacts.",
     "text_preview": "For EU nutrition monitoring, 24-hour dietary recalls are recommended as the main method for youth an...",
     "spacy_entities": [
       {
@@ -37501,8 +37501,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 92,
+    "section": "Monitoring and evaluation of population nutrition and environmental impacts.",
     "text_preview": "evaluates the environmental impacts generated and compares them with the output volume of the value ...",
     "spacy_entities": [
       {
@@ -37915,8 +37915,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 93,
+    "section": "Monitoring and evaluation of population nutrition and environmental impacts.",
     "text_preview": "The Well-Being through Nutrition website (in Finnish):  Ravitsemuksella hyvin- vointia - Finnish Foo...",
     "spacy_entities": [
       {
@@ -38215,8 +38215,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 94,
+    "section": "Appendices",
     "text_preview": "Reference values and additional information. SUSTAINABLE HEALTH FROM FOOD 94 THL  •  DIRECTIONS 15  ...",
     "spacy_entities": [
       {
@@ -38275,8 +38275,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 95,
+    "section": "Appendix 1. Intake of energy-yielding nutrients in relation to nutrition recommendations in adults aged 18–74",
     "text_preview": "Recommended intake or intake range of energy-yielding nutrients, as well as the average daily intake...",
     "spacy_entities": [
       {
@@ -38855,8 +38855,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 96,
+    "section": "Appendix 2. Intake of certain nutrients in relation to nutrition recommendations in adults aged 18–74.",
     "text_preview": "Average daily intake of certain nutrients from food, the average requirement (AR) and the proportion...",
     "spacy_entities": [
       {
@@ -39434,8 +39434,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 97,
+    "section": "Appendix 3. Salt intake in relation to nutrition recommendations in adults aged 18–74",
     "text_preview": "Average daily calculated salt intake, the recommended intake and the proportion of those exceeding t...",
     "spacy_entities": [
       {
@@ -39923,8 +39923,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 98,
+    "section": "Appendix 4. Environmental impacts of agriculture in Finland",
     "text_preview": "Together, the agricultural sector and land use produce about 30% of Finland’s greenhouse gas emissio...",
     "spacy_entities": [
       {
@@ -40207,8 +40207,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 99,
+    "section": "Appendix 4. Environmental impacts of agriculture in Finland",
     "text_preview": "Diverse farming supports field soil fertility, carbon storage and biodiversity. •\t A varied, plant-f...",
     "spacy_entities": [
       {
@@ -40391,8 +40391,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 100,
+    "section": "Appendix 5. Reference values for energy intake and requirement for adults according to physical activity level",
     "text_preview": "Age, years Weight2, kg BMR3, MJ per day Sedentary, PAL4 1.4 MJ per day Average exercise, PAL 1.6 MJ ...",
     "spacy_entities": [
       {
@@ -40765,8 +40765,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 101,
+    "section": "Appendix 6. Energy requirement reference values per kilogram of body weight for infants of 6 to 12 months",
     "text_preview": "Age, months Average energy requirement, kJ/kg Girls Boys 1 469 486 3 404 411 6 342 339 12 333 337",
     "spacy_entities": [
       {
@@ -40839,8 +40839,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 101,
+    "section": "Appendix 7. Energy requirement reference values for children and adolescents aged 2 to 17",
     "text_preview": "Age, years1 Weight, kg BMR2, MJ per day Estimated energy requirement, MJ per day 1–3 13.6 3.3 4.6 4–...",
     "spacy_entities": [
       {
@@ -41015,8 +41015,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 102,
+    "section": "Appendix 7. Energy requirement reference values for children and adolescents aged 2 to 17",
     "text_preview": "Appendix 8. Recommended intakes of fat, carbohydrates and protein for adults and children over 2 yea...",
     "spacy_entities": [
       {
@@ -41886,8 +41886,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 102,
+    "section": "Appendix 8. Recommended intakes of fat, carbohydrates and protein for adults and children over 2 years (without alcohol and with fibre taken into account)",
     "text_preview": "Appendix 8. Recommended intakes of fat, carbohydrates and protein for adults and children over 2 yea...",
     "spacy_entities": [
       {
@@ -42757,8 +42757,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 103,
+    "section": "Appendix 9. Recommended intakes of fat, carbohydrates and protein for infants of 6 to 23 months.",
     "text_preview": "Age, months E% 6–11 months Fat 30–45 Carbohydrates2 40–60, free sugar intake should be less than 10 ...",
     "spacy_entities": [
       {
@@ -43416,8 +43416,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 104,
+    "section": "Appendix 10a. Recommended or adequate intakes of vitamins and choline by age group",
     "text_preview": "Age group Vitamin A RE2 Vitamin D µg3 Vitamin E α-TE4* Vitamin K µg* Choline mg* Vitamin C mg5 ­≤ 6 ...",
     "spacy_entities": [
       {
@@ -44020,8 +44020,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 105,
+    "section": "Appendix 10b. Recommended or adequate intakes of vitamins by age group",
     "text_preview": "Age group Vitamin B12 µg* Folate µg Thiamine mg/MJ Ribo­ flavin mg Niasiini NE/MJ3 Vitamin B6 mg Pan...",
     "spacy_entities": [
       {
@@ -44671,8 +44671,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 106,
+    "section": "Appendix 10c. Recommended mineral intakes by age group",
     "text_preview": "Age group Calcium mg Iron mg Zinc mg Copper µg ≤ 6 months1 120 200 7–11 months 3102 10 3 220 1–3 yea...",
     "spacy_entities": [
       {
@@ -45145,8 +45145,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 107,
+    "section": "Appendix 10d. Adequate intakes of minerals by age group",
     "text_preview": "Age group Phosphorus mg2 Potassium mg Magne­sium mg Iodine µg Selenium µg Fluoride mg5 Manganese mg ...",
     "spacy_entities": [
       {
@@ -45734,8 +45734,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 108,
+    "section": "Appendix 10d. Adequate intakes of minerals by age group",
     "text_preview": "Age group Vitamin A RE2 Vitamin D µg3 Vitamin E α-TE4* Vitamin K µg* Choline mg* Vitamin C mg ≤ 6 mo...",
     "spacy_entities": [
       {
@@ -46275,8 +46275,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 108,
+    "section": "Annex 11a. Average requirements or provisional average requirements for vitamins and choline by age group",
     "text_preview": "SUSTAINABLE HEALTH FROM FOOD 108 THL  •  DIRECTIONS 15  •  2024",
     "spacy_entities": [
       {
@@ -46331,8 +46331,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 109,
+    "section": "Appendix 11b. Average requirements or provisional average requirements for vitamins by age group",
     "text_preview": "Age group Vitamin B12 µg* Folate µg Thiamine mg/MJ Ribo­ flavin mg Niasiini NE/MJ2 Vitamin B6 mg Pan...",
     "spacy_entities": [
       {
@@ -47071,8 +47071,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 110,
+    "section": "Appendix 11b. Average requirements or provisional average requirements for vitamins by age group",
     "text_preview": "Age group Calcium mg Iron mg Zinc2 mg Copper µg ≤ 6 kk1 96 160 7–11 months 2503 8 2.5 180 1–3 years ...",
     "spacy_entities": [
       {
@@ -47468,8 +47468,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 110,
+    "section": "Appendix 11c. Average requirements for minerals by age group",
     "text_preview": "SUSTAINABLE HEALTH FROM FOOD 110 THL  •  DIRECTIONS 15  •  2024",
     "spacy_entities": [
       {
@@ -47524,8 +47524,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 111,
+    "section": "Appendix 11d. Provisional average requirements for minerals by age group",
     "text_preview": "Age group Phosphorus mg2 Potassium mg Magnesium mg Iodine µg Selenium µg Fluoride mg Manganese mg Mo...",
     "spacy_entities": [
       {
@@ -48242,8 +48242,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 112,
+    "section": "Appendix 12. Tolerable upper intake level (UL) of vitamins and minerals in adults and children",
     "text_preview": "Vitamin or mineral UL per day, adults UL per day, children1 Vitamin A2 3,000 µg 1–3 years • 800 µg 4...",
     "spacy_entities": [
       {
@@ -48773,8 +48773,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 113,
+    "section": "Appendix 12. Tolerable upper intake level (UL) of vitamins and minerals in adults and children",
     "text_preview": "Vitamin or mineral UL per day, adults UL per day, children1 Selenium 255 µg 4–6 months • 45 µg 7–11 ...",
     "spacy_entities": [
       {
@@ -49179,8 +49179,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 114,
+    "section": "Appendix 13. Creation and modelling of the food-based dietary guidelines",
     "text_preview": "The preparation of these health-promoting and environmentally friendly food-based dietary guidelines...",
     "spacy_entities": [
       {
@@ -49984,8 +49984,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 115,
+    "section": "Appendix 14a. Criteria for main dishes in food service",
     "text_preview": "Main dish type Nutrient content per 100 g, maximum Fat g Saturated fat g Salt g Main dish porridges*...",
     "spacy_entities": [
       {
@@ -50373,8 +50373,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 116,
+    "section": "Appendix 14b. Criteria for potato and cereal side dishes in food service",
     "text_preview": "Side dish type Nutrient content per 100 g Fat g Saturated fat g Salt g Fibre (of dry weight) g Pasta...",
     "spacy_entities": [
       {
@@ -50814,8 +50814,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 117,
+    "section": "Appendix 14c. Criteria for other parts of the meal in food service",
     "text_preview": "Meal component Nutrient content per 100 g Fat % Saturated fat % Salt g Fibre g Bread – – Fresh bread...",
     "spacy_entities": [
       {
@@ -51276,8 +51276,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 118,
+    "section": "Appendix 15. Experts involved in theme groups and modelling",
     "text_preview": "Expert Organisation Iris Erlund Finnish Institute for Health and Welfare (THL) Riitta Freese Univers...",
     "spacy_entities": [
       {
@@ -51494,8 +51494,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 119,
+    "section": "Appendix 16. Expert consultations on the national recommendations",
     "text_preview": "Expert Organisation Katja Borodulin Age Institute Mikael Fogelholm University of Helsinki Mikaela Gr...",
     "spacy_entities": [
       {
@@ -51790,8 +51790,8 @@
   },
   {
     "chunk_id": "",
-    "page": "",
-    "section": "",
+    "page": 120,
+    "section": "Appendix 16. Expert consultations on the national recommendations",
     "text_preview": "SUSTAINABLE HEALTH FROM FOOD – National Nutrition Recommendations 2024 Sustainable Health from Food ...",
     "spacy_entities": [
       {
