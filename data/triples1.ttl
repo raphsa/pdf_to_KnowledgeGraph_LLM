@@ -1,0 +1,1997 @@
+@prefix ex: <http://example.org/food#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:alcohol ex:associatedWithOutcome ex:colorectal_cancer,
+        ex:morbidity,
+        ex:mortality,
+        ex:triglycerides ;
+    ex:hasEnvironmentalImpact ex:environmental_impact,
+        ex:sustainability ;
+    ex:hasGuideline ex:include_macrocytic,
+        ex:increase_accordingly,
+        ex:increase_tooth,
+        ex:increase_vegetables,
+        ex:limit_for,
+        ex:replace_low ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:zinc ;
+    ex:usesTechnique ex:nitrite ;
+    rdfs:comment "Found on page 102",
+        "Found on page 114",
+        "Found on page 32",
+        "Found on page 34",
+        "Found on page 37",
+        "Found on page 63",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 71" .
+
+ex:barley ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    ex:hasGuideline ex:include_all,
+        ex:include_edible,
+        ex:include_more,
+        ex:include_the,
+        ex:include_whole,
+        ex:increase_reduce ;
+    ex:hasNutrient ex:fibre,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_e,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:nitrite ;
+    rdfs:comment "Found on page 11",
+        "Found on page 116",
+        "Found on page 44",
+        "Found on page 45",
+        "Found on page 71",
+        "Found on page 83" .
+
+ex:berries ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:stroke,
+        ex:triglycerides,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:carbon_footprint,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_heavy,
+        ex:avoid_high,
+        ex:avoid_potentially,
+        ex:avoid_products,
+        ex:avoid_the,
+        ex:include_bacteria,
+        ex:include_criteria,
+        ex:include_cruciferous,
+        ex:include_plants,
+        ex:include_polyphenols,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:include_young,
+        ex:increase_accordingly,
+        ex:increase_safety,
+        ex:increase_the,
+        ex:increase_unfavourable,
+        ex:increase_vegetables,
+        ex:increase_weight,
+        ex:limit_the,
+        ex:prefer_fat,
+        ex:prefer_sources,
+        ex:replace_low,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:phosphorus,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamin_k,
+        ex:zinc ;
+    ex:usesTechnique ex:smoking ;
+    rdfs:comment "Found on page 102",
+        "Found on page 114",
+        "Found on page 20",
+        "Found on page 21",
+        "Found on page 22",
+        "Found on page 24",
+        "Found on page 33",
+        "Found on page 34",
+        "Found on page 35",
+        "Found on page 36",
+        "Found on page 42",
+        "Found on page 43",
+        "Found on page 46",
+        "Found on page 5",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 68",
+        "Found on page 70",
+        "Found on page 76",
+        "Found on page 8",
+        "Found on page 84",
+        "Found on page 88",
+        "Found on page 9" .
+
+ex:beverages ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:inflammation,
+        ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:obesity,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact,
+        ex:sustainability ;
+    ex:hasGuideline ex:include_coffee,
+        ex:include_criteria,
+        ex:include_sweets,
+        ex:increase_blood,
+        ex:increase_the,
+        ex:increase_tooth,
+        ex:increase_unfavourable,
+        ex:increase_weight,
+        ex:limit_for ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_d ;
+    ex:usesTechnique ex:fortification,
+        ex:nitrite ;
+    rdfs:comment "Found on page 114",
+        "Found on page 22",
+        "Found on page 24",
+        "Found on page 25",
+        "Found on page 56",
+        "Found on page 6",
+        "Found on page 60",
+        "Found on page 61",
+        "Found on page 63",
+        "Found on page 64",
+        "Found on page 71",
+        "Found on page 84",
+        "Found on page 87" .
+
+ex:cereals ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact,
+        ex:land_use,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_all,
+        ex:include_children,
+        ex:include_dairy,
+        ex:include_edible,
+        ex:include_fatigue,
+        ex:include_fish,
+        ex:include_meat,
+        ex:include_more,
+        ex:include_osteopenia,
+        ex:include_phytate,
+        ex:include_the,
+        ex:include_whole,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:increase_weight,
+        ex:prefer_fat,
+        ex:replace_low,
+        ex:replace_meat,
+        ex:replace_soy ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_b6,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fermentation,
+        ex:iodised_salt,
+        ex:nitrite ;
+    rdfs:comment "Found on page 11",
+        "Found on page 114",
+        "Found on page 116",
+        "Found on page 24",
+        "Found on page 33",
+        "Found on page 38",
+        "Found on page 39",
+        "Found on page 44",
+        "Found on page 45",
+        "Found on page 53",
+        "Found on page 54",
+        "Found on page 66",
+        "Found on page 70",
+        "Found on page 83",
+        "Found on page 98" .
+
+ex:dairy ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact,
+        ex:sustainability ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_all,
+        ex:include_children,
+        ex:include_coffee,
+        ex:include_dairy,
+        ex:include_fatigue,
+        ex:include_fish,
+        ex:include_foods,
+        ex:include_macrocytic,
+        ex:include_meat,
+        ex:include_milk,
+        ex:include_osteopenia,
+        ex:include_phytate,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:increase_blood,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:prefer_fat,
+        ex:replace_low,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fermentation,
+        ex:fortification,
+        ex:iodised_salt ;
+    rdfs:comment "Found on page 11",
+        "Found on page 114",
+        "Found on page 19",
+        "Found on page 21",
+        "Found on page 26",
+        "Found on page 35",
+        "Found on page 37",
+        "Found on page 38",
+        "Found on page 39",
+        "Found on page 55",
+        "Found on page 56",
+        "Found on page 61",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 68",
+        "Found on page 70",
+        "Found on page 75" .
+
+ex:eggs ex:associatedWithOutcome ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:obesity,
+        ex:overweight,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:environmental_impact ;
+    ex:hasGuideline ex:include_children,
+        ex:include_dairy,
+        ex:include_fatigue,
+        ex:include_fish,
+        ex:include_macrocytic,
+        ex:include_meat,
+        ex:include_osteopenia,
+        ex:include_phytate,
+        ex:include_young,
+        ex:increase_blood,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:replace_low ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fermentation,
+        ex:iodised_salt,
+        ex:nitrite,
+        ex:smoking ;
+    rdfs:comment "Found on page 37",
+        "Found on page 38",
+        "Found on page 39",
+        "Found on page 43",
+        "Found on page 57",
+        "Found on page 66",
+        "Found on page 68",
+        "Found on page 71",
+        "Found on page 82",
+        "Found on page 88" .
+
+ex:fats ex:associatedWithOutcome ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:land_use ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_all,
+        ex:include_butter,
+        ex:include_products,
+        ex:include_sweets,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:increase_the,
+        ex:prefer_fat,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_d,
+        ex:vitamins_a,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fortification ;
+    rdfs:comment "Found on page 11",
+        "Found on page 58",
+        "Found on page 60",
+        "Found on page 70",
+        "Found on page 72" .
+
+ex:fish ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact,
+        ex:land_use,
+        ex:sustainability ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_all,
+        ex:include_children,
+        ex:include_dairy,
+        ex:include_fatigue,
+        ex:include_fish,
+        ex:include_foods,
+        ex:include_macrocytic,
+        ex:include_meat,
+        ex:include_osteopenia,
+        ex:include_perch,
+        ex:include_phytate,
+        ex:include_the,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:include_young,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:increase_weight,
+        ex:limit_the,
+        ex:prefer_fat,
+        ex:prefer_sources,
+        ex:replace_low,
+        ex:replace_meat,
+        ex:replace_soy ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fermentation,
+        ex:iodised_salt,
+        ex:smoking ;
+    rdfs:comment "Found on page 11",
+        "Found on page 114",
+        "Found on page 115",
+        "Found on page 20",
+        "Found on page 21",
+        "Found on page 24",
+        "Found on page 35",
+        "Found on page 37",
+        "Found on page 38",
+        "Found on page 39",
+        "Found on page 43",
+        "Found on page 5",
+        "Found on page 52",
+        "Found on page 54",
+        "Found on page 56",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 68",
+        "Found on page 70",
+        "Found on page 75",
+        "Found on page 82",
+        "Found on page 83",
+        "Found on page 88" .
+
+ex:fruits ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:stroke,
+        ex:triglycerides,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:carbon_footprint,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_heavy,
+        ex:avoid_high,
+        ex:avoid_potentially,
+        ex:avoid_products,
+        ex:avoid_the,
+        ex:include_bacteria,
+        ex:include_criteria,
+        ex:include_cruciferous,
+        ex:include_plants,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:include_young,
+        ex:increase_accordingly,
+        ex:increase_safety,
+        ex:increase_the,
+        ex:increase_unfavourable,
+        ex:increase_vegetables,
+        ex:increase_weight,
+        ex:limit_the,
+        ex:prefer_fat,
+        ex:prefer_sources,
+        ex:replace_low,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:phosphorus,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamin_k,
+        ex:zinc ;
+    ex:usesTechnique ex:smoking ;
+    rdfs:comment "Found on page 102",
+        "Found on page 114",
+        "Found on page 20",
+        "Found on page 21",
+        "Found on page 22",
+        "Found on page 24",
+        "Found on page 33",
+        "Found on page 34",
+        "Found on page 35",
+        "Found on page 36",
+        "Found on page 43",
+        "Found on page 46",
+        "Found on page 5",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 68",
+        "Found on page 70",
+        "Found on page 76",
+        "Found on page 8",
+        "Found on page 84",
+        "Found on page 88",
+        "Found on page 9" .
+
+ex:grains ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_a_variety,
+        ex:include_all,
+        ex:include_coffee,
+        ex:include_edible,
+        ex:include_foods,
+        ex:include_more,
+        ex:include_products,
+        ex:include_the,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_weight,
+        ex:limit_the,
+        ex:prefer_fat,
+        ex:prefer_sources,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamins_a,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fermentation,
+        ex:fortification,
+        ex:nitrite ;
+    rdfs:comment "Found on page 11",
+        "Found on page 114",
+        "Found on page 21",
+        "Found on page 24",
+        "Found on page 33",
+        "Found on page 44",
+        "Found on page 45",
+        "Found on page 49",
+        "Found on page 5",
+        "Found on page 70",
+        "Found on page 71",
+        "Found on page 72",
+        "Found on page 83" .
+
+ex:include_carbohydrates ex:aimsToImprove ex:obesity,
+        ex:overweight ;
+    rdfs:comment "Found on page 31" .
+
+ex:include_nutrient ex:recommendsTechnique ex:fortification ;
+    rdfs:comment "Found on page 13" .
+
+ex:include_physical ex:guidelineTargetsImpact ex:sustainability ;
+    rdfs:comment "Found on page 14" .
+
+ex:include_steps ex:guidelineTargetsImpact ex:climate_impact,
+        ex:sustainability ;
+    rdfs:comment "Found on page 85" .
+
+ex:include_teaching ex:guidelineTargetsImpact ex:sustainability ;
+    rdfs:comment "Found on page 79" .
+
+ex:increase_food ex:guidelineTargetsImpact ex:sustainability ;
+    rdfs:comment "Found on page 79" .
+
+ex:increase_individuals ex:guidelineTargetsImpact ex:sustainability ;
+    rdfs:comment "Found on page 79" .
+
+ex:legumes ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:stroke,
+        ex:triglycerides,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact,
+        ex:land_use,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_a_variety,
+        ex:include_children,
+        ex:include_coffee,
+        ex:include_cruciferous,
+        ex:include_dairy,
+        ex:include_fatigue,
+        ex:include_fish,
+        ex:include_foods,
+        ex:include_macrocytic,
+        ex:include_meat,
+        ex:include_osteopenia,
+        ex:include_phytate,
+        ex:include_plants,
+        ex:include_products,
+        ex:include_the,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:include_young,
+        ex:increase_accordingly,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:increase_weight,
+        ex:limit_the,
+        ex:prefer_fat,
+        ex:prefer_sources,
+        ex:replace_low,
+        ex:replace_meat,
+        ex:replace_soy ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamin_k,
+        ex:vitamins_a,
+        ex:zinc ;
+    ex:usesTechnique ex:fermentation,
+        ex:fortification,
+        ex:iodised_salt,
+        ex:smoking ;
+    rdfs:comment "Found on page 102",
+        "Found on page 114",
+        "Found on page 20",
+        "Found on page 21",
+        "Found on page 24",
+        "Found on page 33",
+        "Found on page 37",
+        "Found on page 38",
+        "Found on page 39",
+        "Found on page 43",
+        "Found on page 46",
+        "Found on page 49",
+        "Found on page 5",
+        "Found on page 50",
+        "Found on page 54",
+        "Found on page 56",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 70",
+        "Found on page 72",
+        "Found on page 83",
+        "Found on page 99" .
+
+ex:milk ex:associatedWithOutcome ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:obesity,
+        ex:overweight,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_all,
+        ex:include_foods,
+        ex:include_milk,
+        ex:include_polyphenols,
+        ex:include_sweets,
+        ex:include_whole,
+        ex:include_young,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:prefer_fat,
+        ex:replace_low,
+        ex:replace_meat,
+        ex:replace_milk,
+        ex:replace_other ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:phosphorus,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_b6,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamin_k,
+        ex:vitamins_a,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fortification,
+        ex:nitrite,
+        ex:smoking ;
+    rdfs:comment "Found on page 103",
+        "Found on page 107",
+        "Found on page 108",
+        "Found on page 109",
+        "Found on page 11",
+        "Found on page 110",
+        "Found on page 111",
+        "Found on page 117",
+        "Found on page 42",
+        "Found on page 43",
+        "Found on page 53",
+        "Found on page 55",
+        "Found on page 56",
+        "Found on page 60",
+        "Found on page 66",
+        "Found on page 68",
+        "Found on page 70",
+        "Found on page 71",
+        "Found on page 73",
+        "Found on page 75" .
+
+ex:nuts ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_a_variety,
+        ex:include_all,
+        ex:include_coffee,
+        ex:include_foods,
+        ex:include_peanuts,
+        ex:include_phytate,
+        ex:include_products,
+        ex:include_the,
+        ex:include_tree,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:increase_weight,
+        ex:limit_the,
+        ex:prefer_fat,
+        ex:prefer_sources,
+        ex:replace_low,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamins_a,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fermentation,
+        ex:fortification,
+        ex:smoking ;
+    rdfs:comment "Found on page 11",
+        "Found on page 114",
+        "Found on page 20",
+        "Found on page 24",
+        "Found on page 33",
+        "Found on page 35",
+        "Found on page 36",
+        "Found on page 39",
+        "Found on page 49",
+        "Found on page 5",
+        "Found on page 51",
+        "Found on page 56",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 70",
+        "Found on page 72",
+        "Found on page 83",
+        "Found on page 88" .
+
+ex:oats ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    ex:hasGuideline ex:include_edible,
+        ex:include_more,
+        ex:include_the,
+        ex:increase_reduce ;
+    ex:hasNutrient ex:fibre,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_e,
+        ex:zinc ;
+    ex:usesTechnique ex:baking ;
+    rdfs:comment "Found on page 44",
+        "Found on page 83" .
+
+ex:oils ex:associatedWithOutcome ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:land_use,
+        ex:sustainability ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_all,
+        ex:include_butter,
+        ex:include_coffee,
+        ex:include_products,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:increase_blood,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:limit_caffeine,
+        ex:limit_the,
+        ex:prefer_fat,
+        ex:prefer_sources,
+        ex:replace_low,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamins_a,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fortification,
+        ex:smoking ;
+    rdfs:comment "Found on page 11",
+        "Found on page 114",
+        "Found on page 20",
+        "Found on page 36",
+        "Found on page 5",
+        "Found on page 58",
+        "Found on page 62",
+        "Found on page 66",
+        "Found on page 70",
+        "Found on page 72" .
+
+ex:potatoes ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:morbidity,
+        ex:mortality,
+        ex:stroke ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_cruciferous,
+        ex:include_plants,
+        ex:include_products,
+        ex:include_the,
+        ex:include_vegetables,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:prefer_fat,
+        ex:replace_low,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:phosphorus,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_b6,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamin_k,
+        ex:vitamins_a,
+        ex:zinc ;
+    ex:usesTechnique ex:fortification,
+        ex:smoking ;
+    rdfs:comment "Found on page 114",
+        "Found on page 116",
+        "Found on page 20",
+        "Found on page 35",
+        "Found on page 36",
+        "Found on page 46",
+        "Found on page 48",
+        "Found on page 66",
+        "Found on page 68",
+        "Found on page 70",
+        "Found on page 72",
+        "Found on page 82",
+        "Found on page 83" .
+
+ex:poultry ex:associatedWithOutcome ex:colorectal_cancer,
+        ex:mortality ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:land_use,
+        ex:sustainability ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_children,
+        ex:include_dairy,
+        ex:include_fatigue,
+        ex:include_fish,
+        ex:include_meat,
+        ex:include_milk,
+        ex:include_osteopenia,
+        ex:include_the,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:prefer_fat,
+        ex:replace_meat,
+        ex:replace_soy ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d ;
+    ex:usesTechnique ex:iodised_salt,
+        ex:nitrite,
+        ex:salting,
+        ex:smoking ;
+    rdfs:comment "Found on page 10",
+        "Found on page 114",
+        "Found on page 27",
+        "Found on page 38",
+        "Found on page 54",
+        "Found on page 55",
+        "Found on page 70",
+        "Found on page 71",
+        "Found on page 82",
+        "Found on page 83",
+        "Found on page 88" .
+
+ex:processed_meat ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:morbidity,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:land_use ;
+    ex:hasGuideline ex:include_the,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:increase_weight,
+        ex:replace_low,
+        ex:replace_soy ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_b6,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:zinc ;
+    ex:usesTechnique ex:fortification,
+        ex:iodised_salt,
+        ex:nitrite,
+        ex:salting,
+        ex:smoking ;
+    rdfs:comment "Found on page 10",
+        "Found on page 19",
+        "Found on page 20",
+        "Found on page 21",
+        "Found on page 24",
+        "Found on page 53",
+        "Found on page 54",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 71",
+        "Found on page 83" .
+
+ex:red_meat ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:land_use,
+        ex:sustainability ;
+    ex:hasGuideline ex:include_milk,
+        ex:include_the,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:replace_low,
+        ex:replace_soy ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_b6,
+        ex:zinc ;
+    ex:usesTechnique ex:nitrite,
+        ex:salting,
+        ex:smoking ;
+    rdfs:comment "Found on page 10",
+        "Found on page 114",
+        "Found on page 21",
+        "Found on page 53",
+        "Found on page 54",
+        "Found on page 55",
+        "Found on page 66",
+        "Found on page 71",
+        "Found on page 82",
+        "Found on page 83" .
+
+ex:replace_a_varied ex:aimsToImprove ex:mortality ;
+    rdfs:comment "Found on page 74" .
+
+ex:rye ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    ex:hasGuideline ex:include_edible,
+        ex:include_more ;
+    ex:hasNutrient ex:fibre,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_e,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:nitrite ;
+    rdfs:comment "Found on page 20",
+        "Found on page 44",
+        "Found on page 45",
+        "Found on page 71" .
+
+ex:seafood ex:associatedWithOutcome ex:mortality ;
+    ex:hasEnvironmentalImpact ex:climate_impact,
+        ex:environmental_impact ;
+    ex:hasGuideline ex:include_all,
+        ex:include_perch,
+        ex:include_whole ;
+    ex:hasNutrient ex:fibre,
+        ex:iodine,
+        ex:protein,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12 ;
+    ex:usesTechnique ex:baking ;
+    rdfs:comment "Found on page 11",
+        "Found on page 52" .
+
+ex:seeds ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_high,
+        ex:avoid_products,
+        ex:include_a_variety,
+        ex:include_all,
+        ex:include_coffee,
+        ex:include_edible,
+        ex:include_foods,
+        ex:include_more,
+        ex:include_peanuts,
+        ex:include_phytate,
+        ex:include_products,
+        ex:include_the,
+        ex:include_tree,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:prefer_fat,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamins_a,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:fermentation,
+        ex:fortification,
+        ex:smoking ;
+    rdfs:comment "Found on page 11",
+        "Found on page 33",
+        "Found on page 36",
+        "Found on page 39",
+        "Found on page 44",
+        "Found on page 49",
+        "Found on page 51",
+        "Found on page 56",
+        "Found on page 64",
+        "Found on page 70",
+        "Found on page 72",
+        "Found on page 83",
+        "Found on page 88",
+        "Found on page 99" .
+
+ex:vegetables ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:morbidity,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:stroke,
+        ex:triglycerides,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:carbon_footprint,
+        ex:climate_impact,
+        ex:emissions,
+        ex:environmental_impact,
+        ex:sustainability,
+        ex:water_footprint ;
+    ex:hasGuideline ex:avoid_butter,
+        ex:avoid_heavy,
+        ex:avoid_high,
+        ex:avoid_potentially,
+        ex:avoid_products,
+        ex:avoid_the,
+        ex:include_a_variety,
+        ex:include_bacteria,
+        ex:include_children,
+        ex:include_coffee,
+        ex:include_criteria,
+        ex:include_cruciferous,
+        ex:include_dairy,
+        ex:include_fatigue,
+        ex:include_fish,
+        ex:include_foods,
+        ex:include_macrocytic,
+        ex:include_meat,
+        ex:include_osteopenia,
+        ex:include_plants,
+        ex:include_the,
+        ex:include_vegetables,
+        ex:include_whole,
+        ex:include_young,
+        ex:increase_accordingly,
+        ex:increase_reduce,
+        ex:increase_safety,
+        ex:increase_the,
+        ex:increase_weight,
+        ex:limit_the,
+        ex:prefer_fat,
+        ex:prefer_sources,
+        ex:replace_meat ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:magnesium,
+        ex:phosphorus,
+        ex:potassium,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:vitamin_k,
+        ex:zinc ;
+    ex:usesTechnique ex:fermentation,
+        ex:iodised_salt,
+        ex:smoking ;
+    rdfs:comment "Found on page 102",
+        "Found on page 114",
+        "Found on page 117",
+        "Found on page 20",
+        "Found on page 21",
+        "Found on page 24",
+        "Found on page 33",
+        "Found on page 34",
+        "Found on page 36",
+        "Found on page 37",
+        "Found on page 38",
+        "Found on page 43",
+        "Found on page 46",
+        "Found on page 49",
+        "Found on page 5",
+        "Found on page 56",
+        "Found on page 64",
+        "Found on page 68",
+        "Found on page 70",
+        "Found on page 76",
+        "Found on page 8",
+        "Found on page 83",
+        "Found on page 84",
+        "Found on page 88",
+        "Found on page 9" .
+
+ex:whole_grain ex:associatedWithOutcome ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:hasEnvironmentalImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:land_use,
+        ex:water_footprint ;
+    ex:hasGuideline ex:include_all,
+        ex:include_children,
+        ex:include_dairy,
+        ex:include_edible,
+        ex:include_fatigue,
+        ex:include_fish,
+        ex:include_macrocytic,
+        ex:include_meat,
+        ex:include_more,
+        ex:include_osteopenia,
+        ex:include_the,
+        ex:include_whole,
+        ex:increase_reduce,
+        ex:increase_the,
+        ex:increase_vegetables,
+        ex:replace_low,
+        ex:replace_soy ;
+    ex:hasNutrient ex:calcium,
+        ex:fibre,
+        ex:iodine,
+        ex:iron,
+        ex:protein,
+        ex:salt,
+        ex:saturated_fat,
+        ex:selenium,
+        ex:vitamin_b12,
+        ex:vitamin_c,
+        ex:vitamin_d,
+        ex:vitamin_e,
+        ex:zinc ;
+    ex:usesTechnique ex:baking,
+        ex:iodised_salt ;
+    rdfs:comment "Found on page 11",
+        "Found on page 21",
+        "Found on page 37",
+        "Found on page 38",
+        "Found on page 44",
+        "Found on page 45",
+        "Found on page 54",
+        "Found on page 64",
+        "Found on page 66",
+        "Found on page 68",
+        "Found on page 83" .
+
+ex:limit_caffeine ex:aimsToImprove ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 62" .
+
+ex:replace_milk ex:recommendsTechnique ex:fortification ;
+    rdfs:comment "Found on page 73" .
+
+ex:replace_other ex:recommendsTechnique ex:fortification ;
+    rdfs:comment "Found on page 73" .
+
+ex:include_butter ex:aimsToImprove ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:land_use ;
+    rdfs:comment "Found on page 58" .
+
+ex:include_peanuts ex:aimsToImprove ex:mortality ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    rdfs:comment "Found on page 51" .
+
+ex:include_perch ex:aimsToImprove ex:mortality ;
+    ex:guidelineTargetsImpact ex:climate_impact,
+        ex:environmental_impact ;
+    rdfs:comment "Found on page 52" .
+
+ex:include_polyphenols ex:guidelineTargetsImpact ex:environmental_impact ;
+    rdfs:comment "Found on page 42" .
+
+ex:include_tree ex:aimsToImprove ex:mortality ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    rdfs:comment "Found on page 51" .
+
+ex:increase_tooth ex:aimsToImprove ex:colorectal_cancer,
+        ex:morbidity,
+        ex:mortality ;
+    ex:guidelineTargetsImpact ex:environmental_impact ;
+    rdfs:comment "Found on page 63" .
+
+ex:limit_for ex:aimsToImprove ex:colorectal_cancer,
+        ex:morbidity,
+        ex:mortality ;
+    ex:guidelineTargetsImpact ex:environmental_impact ;
+    rdfs:comment "Found on page 63" .
+
+ex:avoid_heavy ex:recommendsTechnique ex:smoking ;
+    rdfs:comment "Found on page 76" .
+
+ex:avoid_potentially ex:recommendsTechnique ex:smoking ;
+    rdfs:comment "Found on page 76" .
+
+ex:avoid_the ex:recommendsTechnique ex:smoking ;
+    rdfs:comment "Found on page 76" .
+
+ex:include_bacteria ex:recommendsTechnique ex:smoking ;
+    rdfs:comment "Found on page 76" .
+
+ex:include_sweets ex:aimsToImprove ex:obesity,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact ;
+    rdfs:comment "Found on page 60" .
+
+ex:increase_safety ex:recommendsTechnique ex:smoking ;
+    rdfs:comment "Found on page 76" .
+
+ex:increase_unfavourable ex:aimsToImprove ex:blood_pressure,
+        ex:ldl_cholesterol,
+        ex:obesity ;
+    rdfs:comment "Found on page 22" .
+
+ex:include_milk ex:guidelineTargetsImpact ex:biodiversity,
+        ex:environmental_impact ;
+    rdfs:comment "Found on page 55" .
+
+ex:increase_blood ex:aimsToImprove ex:ldl_cholesterol,
+        ex:obesity,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:environmental_impact ;
+    ex:recommendsTechnique ex:baking ;
+    rdfs:comment "Found on page 57",
+        "Found on page 61",
+        "Found on page 62" .
+
+ex:include_a_variety ex:aimsToImprove ex:colorectal_cancer,
+        ex:mortality ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    ex:recommendsTechnique ex:fermentation ;
+    rdfs:comment "Found on page 49",
+        "Found on page 51" .
+
+ex:include_cruciferous ex:aimsToImprove ex:mortality ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    rdfs:comment "Found on page 46" .
+
+ex:include_plants ex:aimsToImprove ex:mortality ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    rdfs:comment "Found on page 46" .
+
+ex:increase_accordingly ex:aimsToImprove ex:triglycerides ;
+    rdfs:comment "Found on page 102" .
+
+ex:vitamin_b6 ex:decreasesRiskOf ex:colorectal_cancer ;
+    ex:increasesRiskOf ex:colorectal_cancer ;
+    rdfs:comment "Found on page 53" .
+
+ex:vitamin_k ex:decreasesRiskOf ex:mortality ;
+    ex:increasesRiskOf ex:mortality ;
+    rdfs:comment "Found on page 46" .
+
+ex:include_edible ex:aimsToImprove ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    ex:recommendsTechnique ex:baking ;
+    rdfs:comment "Found on page 44" .
+
+ex:include_more ex:aimsToImprove ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    ex:recommendsTechnique ex:baking ;
+    rdfs:comment "Found on page 44" .
+
+ex:include_phytate ex:recommendsTechnique ex:fermentation ;
+    rdfs:comment "Found on page 39" .
+
+ex:include_products ex:recommendsTechnique ex:fortification ;
+    rdfs:comment "Found on page 72" .
+
+ex:include_young ex:aimsToImprove ex:colorectal_cancer,
+        ex:obesity,
+        ex:overweight,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:environmental_impact ;
+    ex:recommendsTechnique ex:smoking ;
+    rdfs:comment "Found on page 43" .
+
+ex:replace_soy ex:aimsToImprove ex:colorectal_cancer ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:land_use ;
+    rdfs:comment "Found on page 54" .
+
+ex:include_children ex:recommendsTechnique ex:iodised_salt ;
+    rdfs:comment "Found on page 38" .
+
+ex:include_coffee ex:aimsToImprove ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:environmental_impact ;
+    ex:recommendsTechnique ex:fermentation ;
+    rdfs:comment "Found on page 49",
+        "Found on page 61",
+        "Found on page 62" .
+
+ex:include_dairy ex:recommendsTechnique ex:iodised_salt ;
+    rdfs:comment "Found on page 38" .
+
+ex:include_fatigue ex:recommendsTechnique ex:iodised_salt ;
+    rdfs:comment "Found on page 38" .
+
+ex:include_fish ex:recommendsTechnique ex:iodised_salt ;
+    rdfs:comment "Found on page 38" .
+
+ex:include_foods ex:aimsToImprove ex:colorectal_cancer,
+        ex:mortality ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:environmental_impact ;
+    ex:recommendsTechnique ex:fermentation ;
+    rdfs:comment "Found on page 49" .
+
+ex:include_meat ex:recommendsTechnique ex:iodised_salt ;
+    rdfs:comment "Found on page 38" .
+
+ex:include_osteopenia ex:recommendsTechnique ex:iodised_salt ;
+    rdfs:comment "Found on page 38" .
+
+ex:limit_the ex:guidelineTargetsImpact ex:environmental_impact,
+        ex:sustainability ;
+    rdfs:comment "Found on page 5" .
+
+ex:prefer_sources ex:guidelineTargetsImpact ex:environmental_impact,
+        ex:sustainability ;
+    rdfs:comment "Found on page 5" .
+
+ex:magnesium ex:decreasesRiskOf ex:colorectal_cancer,
+        ex:mortality ;
+    ex:increasesRiskOf ex:colorectal_cancer,
+        ex:mortality ;
+    rdfs:comment "Found on page 46",
+        "Found on page 49",
+        "Found on page 51" .
+
+ex:nitrite ex:decreasesImpactCategory ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact ;
+    ex:increasesImpactCategory ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact ;
+    rdfs:comment "Found on page 53" .
+
+ex:potassium ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:mortality,
+        ex:stroke ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:mortality,
+        ex:stroke ;
+    rdfs:comment "Found on page 35",
+        "Found on page 46",
+        "Found on page 49" .
+
+ex:include_all ex:recommendsTechnique ex:baking ;
+    rdfs:comment "Found on page 11" .
+
+ex:include_vegetables ex:aimsToImprove ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:stroke ;
+    ex:recommendsTechnique ex:fortification,
+        ex:smoking ;
+    rdfs:comment "Found on page 35",
+        "Found on page 36",
+        "Found on page 72" .
+
+ex:fermentation ex:decreasesImpactCategory ex:biodiversity,
+        ex:environmental_impact ;
+    ex:increasesImpactCategory ex:biodiversity,
+        ex:environmental_impact ;
+    rdfs:comment "Found on page 49" .
+
+ex:selenium ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    rdfs:comment "Found on page 44",
+        "Found on page 51",
+        "Found on page 52" .
+
+ex:include_whole ex:aimsToImprove ex:colorectal_cancer,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:environmental_impact ;
+    ex:recommendsTechnique ex:baking,
+        ex:fermentation ;
+    rdfs:comment "Found on page 11",
+        "Found on page 33",
+        "Found on page 49" .
+
+ex:iodised_salt ex:decreasesImpactCategory ex:environmental_impact ;
+    ex:increasesImpactCategory ex:environmental_impact ;
+    rdfs:comment "Found on page 90" .
+
+ex:vitamin_c ex:decreasesRiskOf ex:mortality ;
+    ex:increasesRiskOf ex:mortality ;
+    rdfs:comment "Found on page 46" .
+
+ex:vitamin_e ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    rdfs:comment "Found on page 44",
+        "Found on page 46",
+        "Found on page 51" .
+
+ex:vitamin_d ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:stroke ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:stroke ;
+    rdfs:comment "Found on page 35",
+        "Found on page 56",
+        "Found on page 74" .
+
+ex:baking ex:decreasesImpactCategory ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    ex:increasesImpactCategory ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:water_footprint ;
+    rdfs:comment "Found on page 44",
+        "Found on page 57" .
+
+ex:increase_the ex:aimsToImprove ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:inflammation,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:guidelineTargetsImpact ex:biodiversity,
+        ex:climate_impact,
+        ex:environmental_impact,
+        ex:sustainability ;
+    ex:recommendsTechnique ex:fermentation,
+        ex:iodised_salt,
+        ex:smoking ;
+    rdfs:comment "Found on page 21",
+        "Found on page 23",
+        "Found on page 33",
+        "Found on page 35",
+        "Found on page 38",
+        "Found on page 43",
+        "Found on page 49",
+        "Found on page 5",
+        "Found on page 60",
+        "Found on page 86",
+        "Found on page 89" .
+
+ex:calcium ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:stroke ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:stroke ;
+    rdfs:comment "Found on page 114",
+        "Found on page 35",
+        "Found on page 46",
+        "Found on page 56" .
+
+ex:iodine ex:decreasesRiskOf ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality ;
+    ex:increasesRiskOf ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality ;
+    rdfs:comment "Found on page 114",
+        "Found on page 52",
+        "Found on page 56" .
+
+ex:smoking ex:decreasesImpactCategory ex:environmental_impact ;
+    ex:increasesImpactCategory ex:environmental_impact ;
+    rdfs:comment "Found on page 43" .
+
+ex:vitamin_b12 ex:decreasesRiskOf ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality ;
+    ex:increasesRiskOf ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality ;
+    rdfs:comment "Found on page 114",
+        "Found on page 52",
+        "Found on page 53",
+        "Found on page 56" .
+
+ex:zinc ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    rdfs:comment "Found on page 44",
+        "Found on page 46",
+        "Found on page 49",
+        "Found on page 51",
+        "Found on page 53" .
+
+ex:iron ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:type_2_diabetes ;
+    rdfs:comment "Found on page 44",
+        "Found on page 46",
+        "Found on page 49",
+        "Found on page 53",
+        "Found on page 54" .
+
+ex:salt ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    rdfs:comment "Found on page 114",
+        "Found on page 21",
+        "Found on page 22",
+        "Found on page 35",
+        "Found on page 53",
+        "Found on page 54",
+        "Found on page 56" .
+
+ex:fibre ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:stroke,
+        ex:triglycerides,
+        ex:type_2_diabetes ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:stroke,
+        ex:triglycerides,
+        ex:type_2_diabetes ;
+    rdfs:comment "Found on page 102",
+        "Found on page 21",
+        "Found on page 31",
+        "Found on page 33",
+        "Found on page 34",
+        "Found on page 44",
+        "Found on page 46",
+        "Found on page 49",
+        "Found on page 51",
+        "Found on page 60" .
+
+ex:protein ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:triglycerides,
+        ex:type_2_diabetes ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:ldl_cholesterol,
+        ex:mortality,
+        ex:obesity,
+        ex:overweight,
+        ex:triglycerides,
+        ex:type_2_diabetes ;
+    rdfs:comment "Found on page 102",
+        "Found on page 22",
+        "Found on page 31",
+        "Found on page 34",
+        "Found on page 44",
+        "Found on page 49",
+        "Found on page 51",
+        "Found on page 52",
+        "Found on page 53",
+        "Found on page 54",
+        "Found on page 57" .
+
+ex:saturated_fat ex:decreasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    ex:increasesRiskOf ex:blood_pressure,
+        ex:colorectal_cancer,
+        ex:hypertension,
+        ex:mortality,
+        ex:obesity,
+        ex:stroke,
+        ex:type_2_diabetes ;
+    rdfs:comment "Found on page 21",
+        "Found on page 53",
+        "Found on page 54",
+        "Found on page 60" .
+
