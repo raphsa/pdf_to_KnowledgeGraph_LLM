@@ -109,16 +109,10 @@ relations:
     description: Intended health outcome the guideline targets.
     cardinality: "0..* -> 0..*"
 
-  decreasesRiskOf:
+  affectsRiskOf:
     domain: nutrient
     range: healthOutcome
-    description: Higher status or intake is associated with lower risk.
-    cardinality: "0..* -> 0..*"
-
-  increasesRiskOf:
-    domain: nutrient
-    range: healthOutcome
-    description: Higher status or intake is associated with higher risk.
+    description: Nutrient influences (increases or decreases) the risk of a health outcome. 
     cardinality: "0..* -> 0..*"
 
   associatedWithOutcome:
@@ -139,14 +133,9 @@ relations:
     description: Guideline aims to reduce or manage a particular environmental impact.
     cardinality: "0..* -> 0..*"
 
-  decreasesImpactCategory:
+  affectsImpactCategory:
     domain: technique
     range: environmentImpact
-    description: Technique tends to lower a specific environmental impact (e.g., less energy use).
+    description: Technique influences (increases or decreases) a specific environmental impact category.
     cardinality: "0..* -> 0..*"
 
-  increasesImpactCategory:
-    domain: technique
-    range: environmentImpact
-    description: Technique tends to raise a specific environmental impact.
-    cardinality: "0..* -> 0..*"
