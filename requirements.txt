@@ -1,0 +1,28 @@
+# Python 3.10
+tensorflow-gpu==2.10.0
+numpy<2
+pandas
+matplotlib
+seaborn
+scikit-learn
+scipy
+nltk
+gensim
+PyMuPDF
+pdfplumber
+tqdm
+rdflib
+spacy
+en-core-web-sm
+transformers
+huggingface_hub[hf_xet]
+groq
+peft
+datasets
+trl
+
+# PyTorch with CUDA 11.8
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch
+torchvision
+torchaudio
