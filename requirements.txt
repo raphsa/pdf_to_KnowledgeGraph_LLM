@@ -16,10 +16,13 @@ spacy
 en-core-web-sm
 transformers
 huggingface_hub[hf_xet]
+hf_xet
 groq
 peft
 datasets
-trl
+trl==0.8.6
+bitsandbytes
+rouge_score
 
 # PyTorch with CUDA 11.8
 --extra-index-url https://download.pytorch.org/whl/cu118
