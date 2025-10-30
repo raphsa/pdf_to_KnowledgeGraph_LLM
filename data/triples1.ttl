@@ -813,6 +813,7 @@ ex:milk ex:associatedWithOutcome ex:colorectal_cancer,
         ex:vitamin_d,
         ex:vitamin_e,
         ex:vitamin_k,
+        ex:vitamin_or_mineral,
         ex:vitamins_a,
         ex:zinc ;
     ex:usesTechnique ex:baking,
@@ -1902,6 +1903,7 @@ ex:saturated_fat ex:affectsRiskOf ex:blood_pressure,
         ex:stroke,
         ex:type_2_diabetes ;
     rdfs:comment "Found on page 21",
+        "Found on page 51",
         "Found on page 53",
         "Found on page 54",
         "Found on page 60" .
