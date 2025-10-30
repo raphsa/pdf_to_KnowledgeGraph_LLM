@@ -1577,12 +1577,10 @@ ex:include_plants ex:aimsToImprove ex:mortality ;
 ex:increase_accordingly ex:aimsToImprove ex:triglycerides ;
     rdfs:comment "Found on page 102" .
 
-ex:vitamin_b6 ex:decreasesRiskOf ex:colorectal_cancer ;
-    ex:increasesRiskOf ex:colorectal_cancer ;
+ex:vitamin_b6 ex:affectsRiskOf ex:colorectal_cancer ;
     rdfs:comment "Found on page 53" .
 
-ex:vitamin_k ex:decreasesRiskOf ex:mortality ;
-    ex:increasesRiskOf ex:mortality ;
+ex:vitamin_k ex:affectsRiskOf ex:mortality ;
     rdfs:comment "Found on page 46" .
 
 ex:include_edible ex:aimsToImprove ex:blood_pressure,
@@ -1675,27 +1673,18 @@ ex:prefer_sources ex:guidelineTargetsImpact ex:environmental_impact,
         ex:sustainability ;
     rdfs:comment "Found on page 5" .
 
-ex:magnesium ex:decreasesRiskOf ex:colorectal_cancer,
-        ex:mortality ;
-    ex:increasesRiskOf ex:colorectal_cancer,
+ex:magnesium ex:affectsRiskOf ex:colorectal_cancer,
         ex:mortality ;
     rdfs:comment "Found on page 46",
         "Found on page 49",
         "Found on page 51" .
 
-ex:nitrite ex:decreasesImpactCategory ex:biodiversity,
-        ex:climate_impact,
-        ex:environmental_impact ;
-    ex:increasesImpactCategory ex:biodiversity,
+ex:nitrite ex:affectsImpactCategory ex:biodiversity,
         ex:climate_impact,
         ex:environmental_impact ;
     rdfs:comment "Found on page 53" .
 
-ex:potassium ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:mortality,
-        ex:stroke ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:potassium ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:mortality,
         ex:stroke ;
@@ -1715,18 +1704,11 @@ ex:include_vegetables ex:aimsToImprove ex:blood_pressure,
         "Found on page 36",
         "Found on page 72" .
 
-ex:fermentation ex:decreasesImpactCategory ex:biodiversity,
-        ex:environmental_impact ;
-    ex:increasesImpactCategory ex:biodiversity,
+ex:fermentation ex:affectsImpactCategory ex:biodiversity,
         ex:environmental_impact ;
     rdfs:comment "Found on page 49" .
 
-ex:selenium ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:type_2_diabetes ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:selenium ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality,
@@ -1746,20 +1728,13 @@ ex:include_whole ex:aimsToImprove ex:colorectal_cancer,
         "Found on page 33",
         "Found on page 49" .
 
-ex:iodised_salt ex:decreasesImpactCategory ex:environmental_impact ;
-    ex:increasesImpactCategory ex:environmental_impact ;
+ex:iodised_salt ex:affectsImpactCategory ex:environmental_impact ;
     rdfs:comment "Found on page 90" .
 
-ex:vitamin_c ex:decreasesRiskOf ex:mortality ;
-    ex:increasesRiskOf ex:mortality ;
+ex:vitamin_c ex:affectsRiskOf ex:mortality ;
     rdfs:comment "Found on page 46" .
 
-ex:vitamin_e ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:type_2_diabetes ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:vitamin_e ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality,
@@ -1768,12 +1743,7 @@ ex:vitamin_e ex:decreasesRiskOf ex:blood_pressure,
         "Found on page 46",
         "Found on page 51" .
 
-ex:vitamin_d ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:stroke ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:vitamin_d ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality,
@@ -1782,11 +1752,7 @@ ex:vitamin_d ex:decreasesRiskOf ex:blood_pressure,
         "Found on page 56",
         "Found on page 74" .
 
-ex:baking ex:decreasesImpactCategory ex:biodiversity,
-        ex:climate_impact,
-        ex:environmental_impact,
-        ex:water_footprint ;
-    ex:increasesImpactCategory ex:biodiversity,
+ex:baking ex:affectsImpactCategory ex:biodiversity,
         ex:climate_impact,
         ex:environmental_impact,
         ex:water_footprint ;
@@ -1821,12 +1787,7 @@ ex:increase_the ex:aimsToImprove ex:blood_pressure,
         "Found on page 86",
         "Found on page 89" .
 
-ex:calcium ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:stroke ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:calcium ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality,
@@ -1836,24 +1797,17 @@ ex:calcium ex:decreasesRiskOf ex:blood_pressure,
         "Found on page 46",
         "Found on page 56" .
 
-ex:iodine ex:decreasesRiskOf ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality ;
-    ex:increasesRiskOf ex:colorectal_cancer,
+ex:iodine ex:affectsRiskOf ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality ;
     rdfs:comment "Found on page 114",
         "Found on page 52",
         "Found on page 56" .
 
-ex:smoking ex:decreasesImpactCategory ex:environmental_impact ;
-    ex:increasesImpactCategory ex:environmental_impact ;
+ex:smoking ex:affectsImpactCategory ex:environmental_impact ;
     rdfs:comment "Found on page 43" .
 
-ex:vitamin_b12 ex:decreasesRiskOf ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality ;
-    ex:increasesRiskOf ex:colorectal_cancer,
+ex:vitamin_b12 ex:affectsRiskOf ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality ;
     rdfs:comment "Found on page 114",
@@ -1861,12 +1815,7 @@ ex:vitamin_b12 ex:decreasesRiskOf ex:colorectal_cancer,
         "Found on page 53",
         "Found on page 56" .
 
-ex:zinc ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:type_2_diabetes ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:zinc ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality,
@@ -1877,12 +1826,7 @@ ex:zinc ex:decreasesRiskOf ex:blood_pressure,
         "Found on page 51",
         "Found on page 53" .
 
-ex:iron ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:type_2_diabetes ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:iron ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality,
@@ -1893,15 +1837,7 @@ ex:iron ex:decreasesRiskOf ex:blood_pressure,
         "Found on page 53",
         "Found on page 54" .
 
-ex:salt ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:hypertension,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:obesity,
-        ex:stroke,
-        ex:type_2_diabetes ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:salt ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:hypertension,
         ex:ldl_cholesterol,
@@ -1917,17 +1853,7 @@ ex:salt ex:decreasesRiskOf ex:blood_pressure,
         "Found on page 54",
         "Found on page 56" .
 
-ex:fibre ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:hypertension,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:obesity,
-        ex:overweight,
-        ex:stroke,
-        ex:triglycerides,
-        ex:type_2_diabetes ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:fibre ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:hypertension,
         ex:ldl_cholesterol,
@@ -1948,15 +1874,7 @@ ex:fibre ex:decreasesRiskOf ex:blood_pressure,
         "Found on page 51",
         "Found on page 60" .
 
-ex:protein ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:ldl_cholesterol,
-        ex:mortality,
-        ex:obesity,
-        ex:overweight,
-        ex:triglycerides,
-        ex:type_2_diabetes ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:protein ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:ldl_cholesterol,
         ex:mortality,
@@ -1976,14 +1894,7 @@ ex:protein ex:decreasesRiskOf ex:blood_pressure,
         "Found on page 54",
         "Found on page 57" .
 
-ex:saturated_fat ex:decreasesRiskOf ex:blood_pressure,
-        ex:colorectal_cancer,
-        ex:hypertension,
-        ex:mortality,
-        ex:obesity,
-        ex:stroke,
-        ex:type_2_diabetes ;
-    ex:increasesRiskOf ex:blood_pressure,
+ex:saturated_fat ex:affectsRiskOf ex:blood_pressure,
         ex:colorectal_cancer,
         ex:hypertension,
         ex:mortality,
