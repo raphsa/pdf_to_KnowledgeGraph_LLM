@@ -23,6 +23,9 @@ datasets
 trl==0.8.6
 bitsandbytes
 rouge_score
+sentence_transformers
+python-Levenshtein
+
 
 # PyTorch with CUDA 11.8
 --extra-index-url https://download.pytorch.org/whl/cu118
