@@ -1,0 +1,72 @@
+@prefix ex: <http://example.org/food#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:dietaryGuideline a rdfs:Class ;
+    rdfs:comment "An official recommendation or rule that specifies how foods or nutrients should be consumed for optimal health and sustainability." .
+
+ex:environmentImpact a rdfs:Class ;
+    rdfs:comment "A quantified environmental effect associated with a food item, process, or dietary recommendation." .
+
+ex:healthOutcome a rdfs:Class ;
+    rdfs:comment "A measurable health effect or condition influenced by dietary factors, nutrients, or behaviors." .
+
+ex:ingredient a rdfs:Class ;
+    rdfs:comment "A physical food item or raw material that people consume or use in recipes." .
+
+ex:nutrient a rdfs:Class ;
+    rdfs:comment "A chemical or biological substance contained in foods that contributes to physiological function and health." .
+
+ex:technique a rdfs:Class ;
+    rdfs:comment "A preparation, cooking, or processing method that modifies food properties, safety, or nutrient content." .
+
+ex:affectsImpactCategory a rdf:Property ;
+    rdfs:comment "Technique influences (increases or decreases) a specific environmental impact category." ;
+    rdfs:domain ex:technique ;
+    rdfs:range ex:environmentImpact .
+
+ex:affectsRiskOf a rdf:Property ;
+    rdfs:comment "Nutrient influences (increases or decreases) the risk of a health outcome." ;
+    rdfs:domain ex:nutrient ;
+    rdfs:range ex:healthOutcome .
+
+ex:aimsToImprove a rdf:Property ;
+    rdfs:comment "Intended health outcome the guideline targets." ;
+    rdfs:domain ex:dietaryGuideline ;
+    rdfs:range ex:healthOutcome .
+
+ex:associatedWithOutcome a rdf:Property ;
+    rdfs:comment "Food is positively or negatively associated with a health outcome." ;
+    rdfs:domain ex:ingredient ;
+    rdfs:range ex:healthOutcome .
+
+ex:guidelineTargetsImpact a rdf:Property ;
+    rdfs:comment "Guideline aims to reduce or manage a particular environmental impact." ;
+    rdfs:domain ex:dietaryGuideline ;
+    rdfs:range ex:environmentImpact .
+
+ex:hasEnvironmentalImpact a rdf:Property ;
+    rdfs:comment "Ingredient has one or more environmental impact records." ;
+    rdfs:domain ex:ingredient ;
+    rdfs:range ex:environmentImpact .
+
+ex:hasGuideline a rdf:Property ;
+    rdfs:comment "A recommendation applies to this ingredient or food." ;
+    rdfs:domain ex:ingredient ;
+    rdfs:range ex:dietaryGuideline .
+
+ex:hasNutrient a rdf:Property ;
+    rdfs:comment "The ingredient contains or is a source of the nutrient." ;
+    rdfs:domain ex:ingredient ;
+    rdfs:range ex:nutrient .
+
+ex:recommendsTechnique a rdf:Property ;
+    rdfs:comment "The guideline recommends or contraindicates a technique." ;
+    rdfs:domain ex:dietaryGuideline ;
+    rdfs:range ex:technique .
+
+ex:usesTechnique a rdf:Property ;
+    rdfs:comment "This food is typically prepared or processed with the technique." ;
+    rdfs:domain ex:ingredient ;
+    rdfs:range ex:technique .
+
