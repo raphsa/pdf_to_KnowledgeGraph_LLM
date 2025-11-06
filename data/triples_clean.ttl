@@ -1,0 +1,1461 @@
+@prefix ex: <http://example.org/food#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:grains ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:fruits ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:nuts ex:hasGuideline ex:limit ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:nuts ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:berries ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:fish ex:hasGuideline ex:limit ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:legumes ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:vegetables ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:vegetable_oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:vegetable_oils ex:hasGuideline ex:limit ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:salt ex:hasGuideline ex:limit ;
+    rdfs:comment "Found on page 5, section 'Preface'" .
+
+ex:salt ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 19, section 'Features of finnish food consumption and nutrition'" .
+
+ex:dairy ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 19, section 'Features of finnish food consumption and nutrition'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 19, section 'Features of finnish food consumption and nutrition'" .
+
+ex:dairy ex:usesTechnique ex:fortification ;
+    rdfs:comment "Found on page 19, section 'Features of finnish food consumption and nutrition'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:salt ex:associatedWithOutcome ex:hypertension ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:salt ex:associatedWithOutcome ex:mortality ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:salt ex:associatedWithOutcome ex:stroke ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:berries ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:red_meat ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:fruits ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:vegetables ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:fruits ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:berries ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:vegetables ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:legumes ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:processed_meat ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:salt ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 21, section 'Health effects of foods'" .
+
+ex:salt ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:nuts ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:increase ex:aimsToImprove ex:cancer ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:increase ex:aimsToImprove ex:blood_pressure ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:dairy ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:salt ex:hasNutrient ex:sodium ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:potatoes ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:berries ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:fruits ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:calcium ex:affectsRiskOf ex:cancer ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:calcium ex:affectsRiskOf ex:blood_pressure ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:vegetables ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:salt ex:associatedWithOutcome ex:blood_pressure ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:salt ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 35, section 'Sodium (salt)'" .
+
+ex:dairy ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 35, section 'Vitamin D'" .
+
+ex:fish ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 35, section 'Vitamin D'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 35, section 'Vitamin D'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 35, section 'Vitamin D'" .
+
+ex:salt ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 38, section 'Iodine'" .
+
+ex:dairy ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 38, section 'Iodine'" .
+
+ex:fish ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 38, section 'Iodine'" .
+
+ex:eggs ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 38, section 'Iodine'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 42, section 'Recommended food choices'" .
+
+ex:salt ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 42, section 'Recommended food choices'" .
+
+ex:potatoes ex:hasNutrient ex:folate ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:potatoes ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:potatoes ex:hasNutrient ex:niacin ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:potatoes ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:potatoes ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:potatoes ex:hasNutrient ex:phosphorus ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:potatoes ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:potatoes ex:hasNutrient ex:vitamin_b6 ;
+    rdfs:comment "Found on page 48, section 'Potatoes'" .
+
+ex:processed_meat ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:red_meat ex:associatedWithOutcome ex:colorectal_cancer ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:red_meat ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:red_meat ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:red_meat ex:hasNutrient ex:riboflavin ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:red_meat ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:red_meat ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:red_meat ex:hasNutrient ex:vitamin_b6 ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:milk ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 53, section 'Red meat'" .
+
+ex:red_meat ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:poultry ex:associatedWithOutcome ex:colorectal_cancer ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:processed_meat ex:associatedWithOutcome ex:colorectal_cancer ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:poultry ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:poultry ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:poultry ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:red_meat ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:poultry ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:poultry ex:hasEnvironmentalImpact ex:land_use ;
+    rdfs:comment "Found on page 54, section 'Poultry.'" .
+
+ex:legumes ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:dairy ex:associatedWithOutcome ex:colorectal_cancer ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:fat ex:affectsRiskOf ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:fish ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:nuts ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:nuts ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:beverages ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:beverages ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:seeds ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:vegetables ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:fish ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:fish ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:dairy ex:associatedWithOutcome ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:legumes ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:yogurt ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:seeds ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:seeds ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:nuts ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:fat ex:affectsRiskOf ex:colorectal_cancer ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:vegetables ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:beverages ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:legumes ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:yogurt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:vegetables ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:nuts ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:vegetables ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:beverages ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:seeds ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:legumes ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 56, section 'Milk and dairy products'" .
+
+ex:alcohol ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:berries ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:alcohol ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:salt ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:vegetables ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:nuts ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:fruits ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:whole_grain ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:seeds ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:legumes ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 64, section 'Diet composition'" .
+
+ex:cereals ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:milk ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:potatoes ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:butter ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:red_meat ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:whole_grain ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:fruits ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:berries ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:legumes ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:vegetable_oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:processed_meat ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:salt ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:potatoes ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:nuts ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:alcohol ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:vegetables ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:fish ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:red_meat ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:cereals ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:whole_grain ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:legumes ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:butter ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:vegetable_oils ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:processed_meat ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:berries ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:fruits ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:nuts ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:vegetables ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:potatoes ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:eggs ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:alcohol ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:legumes ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:cereals ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:butter ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:milk ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:alcohol ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:dairy ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:processed_meat ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:red_meat ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:nuts ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:fruits ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:berries ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:whole_grain ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:vegetables ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:salt ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:vegetable_oils ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 66, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:vegetable_oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:berries ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:butter ex:hasGuideline ex:avoid ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:oils ex:hasGuideline ex:avoid ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:fruits ex:hasGuideline ex:avoid ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:salt ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:fruits ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:vegetables ex:hasGuideline ex:avoid ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:vegetable_oils ex:hasGuideline ex:avoid ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:butter ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:berries ex:hasGuideline ex:avoid ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:salt ex:hasGuideline ex:avoid ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:vegetables ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 70, section 'Diet composition'" .
+
+ex:milk ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 71, section 'Diet composition'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 71, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 82, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:potatoes ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 82, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:eggs ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 82, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:red_meat ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 82, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:poultry ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 82, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:salt ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 82, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:vegetable_fat_spread ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 82, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:whole_grain ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:grains ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:nuts ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:red_meat ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:fish ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:salt ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:poultry ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:legumes ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:cereals ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:vegetables ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:seeds ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 83, section 'Application of the nutrition recommendations in food services.'" .
+
+ex:salt ex:hasNutrient ex:selenium ;
+    rdfs:comment "Found on page 90, section 'Monitoring and evaluation of population nutrition and environmental impacts.'" .
+
+ex:salt ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 90, section 'Monitoring and evaluation of population nutrition and environmental impacts.'" .
+
+ex:salt ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 91, section 'Monitoring and evaluation of population nutrition and environmental impacts.'" .
+
+ex:salt ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 91, section 'Monitoring and evaluation of population nutrition and environmental impacts.'" .
+
+ex:butter ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:cheese ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:cereals ex:usesTechnique ex:baking ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:nuts ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:seeds ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:whole_grain ex:usesTechnique ex:baking ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:seafood ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:coconut_oil ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:vegetable_fat_spread ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:vegetable_oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:palm_oil ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 11, section 'Glossary'" .
+
+ex:fruits ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 33, section 'Carbohydrates and fibre'" .
+
+ex:berries ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 33, section 'Carbohydrates and fibre'" .
+
+ex:vegetables ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 33, section 'Carbohydrates and fibre'" .
+
+ex:grains ex:associatedWithOutcome ex:colorectal_cancer ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:cereals ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:cereals ex:hasNutrient ex:selenium ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:grains ex:associatedWithOutcome ex:blood_pressure ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:grains ex:associatedWithOutcome ex:type_2_diabetes ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:whole_grain ex:usesTechnique ex:baking ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:cereals ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:grains ex:associatedWithOutcome ex:mortality ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:grains ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:cereals ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:grains ex:associatedWithOutcome ex:cholesterol ;
+    rdfs:comment "Found on page 44, section 'Cereals and cereal products'" .
+
+ex:legumes ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:hasNutrient ex:magnesium ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:associatedWithOutcome ex:colorectal_cancer ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:usesTechnique ex:fermentation ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:usesTechnique ex:boiling ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:hasNutrient ex:folate ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:legumes ex:associatedWithOutcome ex:mortality ;
+    rdfs:comment "Found on page 49, section 'Legumes and legume products.'" .
+
+ex:oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:grains ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:seeds ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:potatoes ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:lentils ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:vegetable_oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:vegetables ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:nuts ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:legumes ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:legumes ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:beans ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:potatoes ex:hasNutrient ex:vitamin_a ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:grains ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:vegetables ex:hasNutrient ex:vitamin_a ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:grains ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:legumes ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 72, section 'Diet composition'" .
+
+ex:increase ex:guidelineTargetsImpact ex:eutrophication ;
+    rdfs:comment "Found on page 8, section 'Glossary'" .
+
+ex:vegetables ex:hasNutrient ex:added_sugar ;
+    rdfs:comment "Found on page 8, section 'Glossary'" .
+
+ex:fruits ex:hasNutrient ex:added_sugar ;
+    rdfs:comment "Found on page 8, section 'Glossary'" .
+
+ex:berries ex:hasNutrient ex:added_sugar ;
+    rdfs:comment "Found on page 8, section 'Glossary'" .
+
+ex:fruits ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 9, section 'Glossary'" .
+
+ex:berries ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 9, section 'Glossary'" .
+
+ex:vegetables ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 9, section 'Glossary'" .
+
+ex:fruits ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 34, section 'Protein.'" .
+
+ex:alcohol ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 34, section 'Protein.'" .
+
+ex:alcohol ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 34, section 'Protein.'" .
+
+ex:alcohol ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 34, section 'Protein.'" .
+
+ex:alcohol ex:hasNutrient ex:saturated_fatty_acids ;
+    rdfs:comment "Found on page 34, section 'Protein.'" .
+
+ex:berries ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 34, section 'Protein.'" .
+
+ex:alcohol ex:hasNutrient ex:monounsaturated_fatty_acids ;
+    rdfs:comment "Found on page 34, section 'Protein.'" .
+
+ex:vegetables ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 34, section 'Protein.'" .
+
+ex:vegetables ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 36, section 'Vitamin C'" .
+
+ex:potatoes ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 36, section 'Vitamin C'" .
+
+ex:fruits ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 36, section 'Vitamin C'" .
+
+ex:berries ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 36, section 'Vitamin C'" .
+
+ex:alcohol ex:hasNutrient ex:folate ;
+    rdfs:comment "Found on page 37, section 'Folate'" .
+
+ex:legumes ex:hasNutrient ex:folate ;
+    rdfs:comment "Found on page 37, section 'Folate'" .
+
+ex:dairy ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 38, section 'Calcium'" .
+
+ex:calcium ex:affectsRiskOf ex:osteoporosis ;
+    rdfs:comment "Found on page 38, section 'Calcium'" .
+
+ex:dairy ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 38, section 'Calcium'" .
+
+ex:dairy ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 38, section 'Calcium'" .
+
+ex:vegetables ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 38, section 'Calcium'" .
+
+ex:fish ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 38, section 'Calcium'" .
+
+ex:increase ex:recommendsTechnique ex:smoking ;
+    rdfs:comment "Found on page 43, section 'Breastfeeding and introduction of complementary foods'" .
+
+ex:berries ex:hasNutrient ex:folate ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:fruits ex:hasNutrient ex:vitamin_e ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:fruits ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:fruits ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:fruits ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:vitamin_k ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:magnesium ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:fruits ex:hasNutrient ex:folate ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:berries ex:hasNutrient ex:vitamin_k ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:fruits ex:hasEnvironmentalImpact ex:water_footprint ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:vitamin_e ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:fruits ex:hasNutrient ex:vitamin_k ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:berries ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:berries ex:hasNutrient ex:vitamin_e ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasEnvironmentalImpact ex:water_footprint ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:berries ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:folate ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:vegetables ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:berries ex:hasNutrient ex:potassium ;
+    rdfs:comment "Found on page 46, section 'Vegetables, berries and fruits'" .
+
+ex:dairy ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 68, section 'Diet composition'" .
+
+ex:fish ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 68, section 'Diet composition'" .
+
+ex:whole_grain ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 68, section 'Diet composition'" .
+
+ex:eggs ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 68, section 'Diet composition'" .
+
+ex:vegetable_fat_spread ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 68, section 'Diet composition'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 68, section 'Diet composition'" .
+
+ex:vegetable_fat_spread ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 69, section 'Diet composition'" .
+
+ex:whole_grain ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 69, section 'Diet composition'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 69, section 'Diet composition'" .
+
+ex:avoid ex:recommendsTechnique ex:smoking ;
+    rdfs:comment "Found on page 76, section 'Food safety'" .
+
+ex:fish ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 88, section 'Food security and nutrition health for all.'" .
+
+ex:whole_grain ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:fish ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:cereals ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:dairy ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:poultry ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:tea ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:legumes ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:coffee ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:poultry ex:hasNutrient ex:vitamin_c ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:fish ex:hasNutrient ex:iron ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:cocoa ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 38, section 'Iron'" .
+
+ex:nuts ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 39, section 'Zinc'" .
+
+ex:eggs ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 39, section 'Zinc'" .
+
+ex:cereals ex:usesTechnique ex:fermentation ;
+    rdfs:comment "Found on page 39, section 'Zinc'" .
+
+ex:legumes ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 39, section 'Zinc'" .
+
+ex:cereals ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 39, section 'Zinc'" .
+
+ex:dairy ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 39, section 'Zinc'" .
+
+ex:legumes ex:usesTechnique ex:fermentation ;
+    rdfs:comment "Found on page 39, section 'Zinc'" .
+
+ex:seeds ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 39, section 'Zinc'" .
+
+ex:butter ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:vegetable_oils ex:associatedWithOutcome ex:mortality ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:saturated_fatty_acids ex:affectsRiskOf ex:type_2_diabetes ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:butter ex:associatedWithOutcome ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:palm_oil ex:hasEnvironmentalImpact ex:land_use ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:oils ex:associatedWithOutcome ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:butter ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:oils ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:polyunsaturated_fatty_acids ex:affectsRiskOf ex:type_2_diabetes ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:vegetable_oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:vegetable_oils ex:associatedWithOutcome ex:type_2_diabetes ;
+    rdfs:comment "Found on page 58, section 'Dietary fats'" .
+
+ex:butter ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 59, section 'Dietary fats'" .
+
+ex:butter ex:hasNutrient ex:unsaturated_fatty_acids ;
+    rdfs:comment "Found on page 59, section 'Dietary fats'" .
+
+ex:oils ex:hasNutrient ex:unsaturated_fatty_acids ;
+    rdfs:comment "Found on page 59, section 'Dietary fats'" .
+
+ex:oils ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 59, section 'Dietary fats'" .
+
+ex:dairy ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 39, section 'Iodine'" .
+
+ex:fish ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 39, section 'Iodine'" .
+
+ex:dairy ex:hasNutrient ex:selenium ;
+    rdfs:comment "Found on page 39, section 'Selenium'" .
+
+ex:nuts ex:hasNutrient ex:selenium ;
+    rdfs:comment "Found on page 39, section 'Selenium'" .
+
+ex:fish ex:hasNutrient ex:selenium ;
+    rdfs:comment "Found on page 39, section 'Selenium'" .
+
+ex:eggs ex:hasNutrient ex:selenium ;
+    rdfs:comment "Found on page 39, section 'Selenium'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 52, section 'Fish'" .
+
+ex:fish ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 52, section 'Fish'" .
+
+ex:fish ex:hasEnvironmentalImpact ex:eutrophication ;
+    rdfs:comment "Found on page 52, section 'Fish'" .
+
+ex:fish ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 52, section 'Fish'" .
+
+ex:fish ex:associatedWithOutcome ex:mortality ;
+    rdfs:comment "Found on page 52, section 'Fish'" .
+
+ex:dairy ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 75, section 'Fortification of food products and dietary supplements'" .
+
+ex:dairy ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 75, section 'Fortification of food products and dietary supplements'" .
+
+ex:fish ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 75, section 'Fortification of food products and dietary supplements'" .
+
+ex:dairy ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 75, section 'Fortification of food products and dietary supplements'" .
+
+ex:fish ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 75, section 'Fortification of food products and dietary supplements'" .
+
+ex:fish ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 75, section 'Fortification of food products and dietary supplements'" .
+
+ex:fish ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 75, section 'Fortification of food products and dietary supplements'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 75, section 'Fortification of food products and dietary supplements'" .
+
+ex:nuts ex:hasNutrient ex:magnesium ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:nuts ex:hasNutrient ex:vitamin_e ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:nuts ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:seeds ex:hasNutrient ex:selenium ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:nuts ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:nuts ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:nuts ex:associatedWithOutcome ex:mortality ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:seeds ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:seeds ex:hasNutrient ex:magnesium ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:seeds ex:hasNutrient ex:vitamin_e ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:nuts ex:hasNutrient ex:selenium ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:seeds ex:hasNutrient ex:zinc ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:nuts ex:hasEnvironmentalImpact ex:water_footprint ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:seeds ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:seeds ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:nuts ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 51, section 'Nuts and seeds.'" .
+
+ex:beverages ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:free_sugar ex:affectsRiskOf ex:type_2_diabetes ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:coffee ex:associatedWithOutcome ex:cholesterol ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:beverages ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:beverages ex:associatedWithOutcome ex:type_2_diabetes ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:free_sugar ex:affectsRiskOf ex:obesity ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:beverages ex:associatedWithOutcome ex:obesity ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:increase ex:aimsToImprove ex:cholesterol ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:coffee ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 61, section 'Beverages'" .
+
+ex:alcohol ex:associatedWithOutcome ex:morbidity ;
+    rdfs:comment "Found on page 63, section 'Alcohol'" .
+
+ex:alcohol ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 63, section 'Alcohol'" .
+
+ex:alcohol ex:associatedWithOutcome ex:mortality ;
+    rdfs:comment "Found on page 63, section 'Alcohol'" .
+
+ex:alcohol ex:hasGuideline ex:limit ;
+    rdfs:comment "Found on page 63, section 'Alcohol'" .
+
+ex:beverages ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 63, section 'Alcohol'" .
+
+ex:alcohol ex:associatedWithOutcome ex:cancer ;
+    rdfs:comment "Found on page 63, section 'Alcohol'" .
+
+ex:processed_meat ex:usesTechnique ex:smoking ;
+    rdfs:comment "Found on page 10, section 'Glossary'" .
+
+ex:processed_meat ex:usesTechnique ex:salting ;
+    rdfs:comment "Found on page 10, section 'Glossary'" .
+
+ex:cocoa ex:hasEnvironmentalImpact ex:biodiversity_loss ;
+    rdfs:comment "Found on page 27, section 'Environmental impact of food'" .
+
+ex:chocolate ex:hasEnvironmentalImpact ex:biodiversity_loss ;
+    rdfs:comment "Found on page 27, section 'Environmental impact of food'" .
+
+ex:coffee ex:hasEnvironmentalImpact ex:biodiversity_loss ;
+    rdfs:comment "Found on page 27, section 'Environmental impact of food'" .
+
+ex:poultry ex:hasEnvironmentalImpact ex:biodiversity_loss ;
+    rdfs:comment "Found on page 27, section 'Environmental impact of food'" .
+
+ex:dairy ex:hasEnvironmentalImpact ex:climate_impact ;
+    rdfs:comment "Found on page 26, section 'Environmental impact of food'" .
+
+ex:dairy ex:hasNutrient ex:riboflavin ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:vitamin_b12 ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:calcium ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:riboflavin ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:dairy ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:milk ex:hasNutrient ex:iodine ;
+    rdfs:comment "Found on page 55, section 'Milk and dairy products'" .
+
+ex:coffee ex:associatedWithOutcome ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 62, section 'Beverages'" .
+
+ex:coffee ex:associatedWithOutcome ex:cholesterol ;
+    rdfs:comment "Found on page 62, section 'Beverages'" .
+
+ex:coffee ex:hasNutrient ex:added_sugar ;
+    rdfs:comment "Found on page 62, section 'Beverages'" .
+
+ex:oils ex:associatedWithOutcome ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 62, section 'Beverages'" .
+
+ex:oils ex:associatedWithOutcome ex:cholesterol ;
+    rdfs:comment "Found on page 62, section 'Beverages'" .
+
+ex:increase ex:aimsToImprove ex:cholesterol ;
+    rdfs:comment "Found on page 62, section 'Beverages'" .
+
+ex:coffee ex:hasGuideline ex:limit ;
+    rdfs:comment "Found on page 62, section 'Beverages'" .
+
+ex:vegetable_fat_spread ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 67, section 'Diet composition'" .
+
+ex:whole_grain ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 67, section 'Diet composition'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 67, section 'Diet composition'" .
+
+ex:chocolate ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 60, section 'Sugary foods'" .
+
+ex:increase ex:aimsToImprove ex:type_2_diabetes ;
+    rdfs:comment "Found on page 60, section 'Sugary foods'" .
+
+ex:sugar-sweetened_beverages ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 60, section 'Sugary foods'" .
+
+ex:chocolate ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 60, section 'Sugary foods'" .
+
+ex:milk ex:hasNutrient ex:free_sugar ;
+    rdfs:comment "Found on page 60, section 'Sugary foods'" .
+
+ex:cocoa ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 60, section 'Sugary foods'" .
+
+ex:increase ex:aimsToImprove ex:obesity ;
+    rdfs:comment "Found on page 60, section 'Sugary foods'" .
+
+ex:milk ex:usesTechnique ex:fortification ;
+    rdfs:comment "Found on page 73, section 'Fortification of food products and dietary supplements'" .
+
+ex:milk ex:hasNutrient ex:vitamin_d ;
+    rdfs:comment "Found on page 73, section 'Fortification of food products and dietary supplements'" .
+
+ex:milk ex:hasNutrient ex:fat ;
+    rdfs:comment "Found on page 73, section 'Fortification of food products and dietary supplements'" .
+
+ex:eggs ex:usesTechnique ex:baking ;
+    rdfs:comment "Found on page 57, section 'Eggs'" .
+
+ex:eggs ex:associatedWithOutcome ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 57, section 'Eggs'" .
+
+ex:eggs ex:hasNutrient ex:protein ;
+    rdfs:comment "Found on page 57, section 'Eggs'" .
+
+ex:increase ex:aimsToImprove ex:ldl_cholesterol ;
+    rdfs:comment "Found on page 57, section 'Eggs'" .
+
+ex:eggs ex:hasGuideline ex:increase ;
+    rdfs:comment "Found on page 57, section 'Eggs'" .
+
+ex:increase ex:aimsToImprove ex:obesity ;
+    rdfs:comment "Found on page 23, section 'Health effects of foods'" .
+
+ex:fat ex:affectsRiskOf ex:obesity ;
+    rdfs:comment "Found on page 23, section 'Health effects of foods'" .
+
+ex:fat ex:affectsRiskOf ex:inflammation ;
+    rdfs:comment "Found on page 23, section 'Health effects of foods'" .
+
