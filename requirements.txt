@@ -25,6 +25,7 @@ bitsandbytes
 rouge_score
 sentence_transformers
 python-Levenshtein
+nbimporter
 
 
 # PyTorch with CUDA 11.8
