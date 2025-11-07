@@ -1,2 +1,0 @@
-{"instruction": "What nutrient is high in eggs?", "input": "", "output": "protein, protein, protein (Source: p.38, p.39, p.39)", "question_type": "factoid", "grounding": [{"subject": "eggs", "predicate": "hasNutrient", "object": "protein", "page": "38"}, {"subject": "eggs", "predicate": "hasNutrient", "object": "protein", "page": "39"}, {"subject": "eggs", "predicate": "hasNutrient", "object": "protein", "page": "39"}]}
-{"instruction": "List two ingredients rich in fiber.", "input": "", "output": "No data found.", "question_type": "list", "grounding": []}
