@@ -25,6 +25,8 @@ bitsandbytes
 rouge_score
 sentence_transformers
 python-Levenshtein
+camelot
+SPARQLWrapper
 
 
 # PyTorch with CUDA 11.8
