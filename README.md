@@ -35,10 +35,10 @@ The end goal is to evaluate whether **LLM fine-tuning on grounded knowledge** im
 - Extract text, headings, and metadata with page anchors.
 - Parse tables into structured formats (`CSV`/`JSON`).
 - Preserve figures, captions, and section hierarchy.  
-**Deliverables:**  
+**Outputs:**  
 ```
-raw_text.jsonl
-tables/*.csv
+data/raw_text.jsonl
+data/tables/*.csv
 ```
 
 ---
@@ -46,9 +46,9 @@ tables/*.csv
 ### **2. Domain Schema & Ontology**
 - Design an ontology defining **entities, attributes, and relations** (e.g., `Ingredient`, `Nutrient`, `Recipe`, `Technique`).
 - Specify URI and type conventions.  
-**Deliverable:**  
+**Output:**  
 ```
-ontology.yaml  (or ontology.ttl)
+data/ontology.yaml - data/ontology.ttl
 ```
 
 ---
@@ -56,9 +56,9 @@ ontology.yaml  (or ontology.ttl)
 ### **3. NER & Keyphrase Extraction**
 - Apply **NER** (spaCy/transformer) and **keyphrase extraction** (YAKE, KeyBERT).
 - Map entity mentions to ontology classes and resolve aliases.  
-**Deliverable:**  
+**Output:**  
 ```
-entities.jsonl
+entities_new.jsonl
 ```
 
 ---
@@ -67,9 +67,9 @@ entities.jsonl
 - Identify relations via rule-based or ML models.  
   Example: `Ingredient → hasNutrient → Nutrient`
 - Convert relations into RDF triples with provenance metadata.  
-**Deliverables:**  
+**Output:**  
 ```
-triples.ttl  or  graph.json
+data/triples_clean.ttl
 ```
 
 ---
@@ -77,18 +77,18 @@ triples.ttl  or  graph.json
 ### **5. Knowledge Graph Construction**
 - Load triples into a graph database (e.g., **Neo4j**, **GraphDB**, **Fuseki**).
 - Run SPARQL/Cypher queries for validation.  
-**Deliverables:**  
+**Outputs:**  
 - Graph instance  
-- Query notebook with 5–10 example queries  
+- Query notebook with 5–10 example queries: ```data/fuseki_queries.ipynb```   
 
 ---
 
 ### **6. Fact Extraction & Contradiction Checking**
 - Generate atomic facts and natural-language paraphrases.
 - Detect internal contradictions or overlaps in numerical/textual data.  
-**Deliverable:**  
+**Output:**  
 ```
-facts.jsonl
+data/facts.jsonl
 ```
 
 ---
@@ -100,9 +100,11 @@ facts.jsonl
   - List/Compare queries  
   - Reasoning and constraint-based queries  
 - Each example includes **grounding evidence** (linked triples/pages).  
-**Deliverable:**  
+**Outputs:**  
 ```
-instructions.jsonl  (train/val/test split)
+data/train/test/val/train_instructions.jsonl
+data/train/test/val/test_instructions.jsonl
+data/train/test/val/val_instructions.jsonl
 ```
 
 ---
@@ -111,31 +113,39 @@ instructions.jsonl  (train/val/test split)
 - **RAG over KG:** Retrieve facts from KG and use LLM for reasoning.  
 - **Zero-shot LLM:** Directly prompt the model without KG grounding.  
 **Metrics:** latency, context length, factual coverage.
+**Outputs:**
+```
+models/baselines/rag_predictions.jsonl
+models/baselines/zero_shot_predictions.jsonl
+```
 
 ---
 
 ### **9. Fine-Tuning Setup**
 - Fine-tune LLM (e.g., **Mistral-7B**, **LLaMA-2-7B**) using **LoRA** or adapter-based methods.
 - Maintain consistent prompt templates with factual guardrails.  
-**Deliverables:**  
-- Training logs  
-- Model checkpoints  
-- Validation metrics  
+**Outputs:**  
+- Training logs: ```models/fine_tuned_model/train/logs/```  
+- Model checkpoints: ```models/fine_tuned_model/train/```   
+- Validation metrics: ```models/fine_tuned_model/train/```
 
 ---
 
 ### **10. Evaluation**
 **Automatic Metrics**
-- Exact Match / F1 for factual QA  
+- F1 for factual QA  
 - ROUGE/BLEU for generation  
-- Constraint satisfaction  
-- Faithfulness (string match to KG facts)
+- Constraint satisfaction rate  
 
-**Human / Rubric-based**
+**Rubric-based Metrics**
 - Relevance  
 - Completeness  
 - Citation correctness  
 
+**Outputs:**
+```
+evaluation/plots/*.png
+```
 
 ---
 
@@ -144,13 +154,17 @@ instructions.jsonl  (train/val/test split)
 - Mark unsupported claims.  
 **Metric:**  
 `Hallucination Rate = % of answers with unsupported claims`
+**Output:**
+```
+evaluation/plots/hallucination_rate.png
+```
 
 ---
 
-### **12. (Optional) Interactive Demo**
+### **12. Interactive Demo**
 Simple **Streamlit/Gradio** app for demonstration:  
-- **Input:** User query  
-- **Output:** Generated answer with inline citations  
+- **Demo Input:** User query  
+- **Demo Output:** Generated answer with inline citations  
 - **Modes:** Zero-shot | RAG-KG | Fine-tuned  
 
 ---
@@ -161,29 +175,34 @@ Simple **Streamlit/Gradio** app for demonstration:
 Project_24_NLP/
 │
 ├── data/
-│   ├── raw_text.jsonl
 │   ├── tables/
+│   ├── train/test/val/
+│   ├── raw_text.jsonl
 │   ├── ontology.yaml
-│   ├── entities.jsonl
-│   ├── triples.ttl
+│   ├── ontology.ttl
+│   ├── entities_new.jsonl
 │   ├── facts.jsonl
-│
-├── notebooks/
-│   ├── parsing.ipynb
-│   ├── relation_extraction.ipynb
-│   ├── KG_queries.ipynb
+│   ├── triples_clean.ttl
+│   ├── fuseki_queries.ipynb
+│   ├── sustainable-health-from-food_web.pdf
 │
 ├── models/
-│   ├── fine_tuned_model/
+│   ├── fine_tuned_model/train/
 │   ├── baselines/
 │
 ├── evaluation/
-│   ├── results.csv
 │   ├── plots/
 │
-├── app/
-│   └── demo_app.py
-│
+├── baseline_gui.ipynb
+├── baselines.ipynb
+├── fine_tuning_gui.ipynb
+├── fine_tuning.ipynb
+├── gui.ipynb
+├── main.ipynb
+├── model_test.ipynb
+├── ner3.ipynb
+├── report.pdf
+├── report.tex
 └── README.md
 ```
 
@@ -191,7 +210,7 @@ Project_24_NLP/
 
 ## 🧪 Technologies Used
 
-- **Python 3.10+**
+- **Python 3.10**
 - **spaCy**, **Transformers (Hugging Face)**
 - **KeyBERT**, **YAKE**
 - **Neo4j** / **GraphDB**
@@ -200,18 +219,20 @@ Project_24_NLP/
 
 ---
 
+## 🧰 Installation
+
+Before running the code, make sure to install all required dependencies listed in the requirements.txt file.
+
+```
+pip install -r requirements.txt
+```
+
+---
+
 ## Evaluation Goals
 
-- Assess how **grounded fine-tuning** improves **faithfulness** and **reduces hallucination**.  
+- Assess how **grounded fine-tuning** improves **manual/rubric based metrics** and **reduces hallucination**.  
 - Measure trade-offs between **retrieval-based** and **end-to-end fine-tuned** methods.  
 - Provide insight into building **trustworthy domain-specific LLMs**.
 
 ---
-
-## Learning Outcomes
-
-By completing this project, you will learn how to:
-- Extract and represent structured knowledge from unstructured PDFs.  
-- Build and query knowledge graphs.  
-- Generate instruction datasets for LLM training.  
-- Fine-tune and evaluate large language models on domain-specific tasks.
