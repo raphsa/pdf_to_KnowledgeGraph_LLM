@@ -34,7 +34,11 @@ The end goal is to evaluate whether **LLM fine-tuning on grounded knowledge** im
 ### **1. PDF Ingestion & Parsing**
 - Extract text, headings, and metadata with page anchors.
 - Parse tables into structured formats (`CSV`/`JSON`).
-- Preserve figures, captions, and section hierarchy.  
+- Preserve figures, captions, and section hierarchy.
+- **Source Code:**
+```
+main.ipynb
+```  
 - **Outputs:**  
 ```
 data/raw_text.jsonl
@@ -55,7 +59,11 @@ data/ontology.yaml - data/ontology.ttl
 
 ### **3. NER & Keyphrase Extraction**
 - Apply **NER** (spaCy/transformer) and **keyphrase extraction** (YAKE, KeyBERT).
-- Map entity mentions to ontology classes and resolve aliases.  
+- Map entity mentions to ontology classes and resolve aliases.
+- **Source Code:**
+```
+ner3.ipynb
+``` 
 - **Output:**  
 ```
 entities_new.jsonl
@@ -66,7 +74,11 @@ entities_new.jsonl
 ### **4. Relation Extraction & Triple Building**
 - Identify relations via rule-based or ML models.  
   Example: `Ingredient → hasNutrient → Nutrient`
-- Convert relations into RDF triples with provenance metadata.  
+- Convert relations into RDF triples with provenance metadata.
+- **Source Code:**
+```
+main.ipynb
+``` 
 - **Output:**  
 ```
 data/triples_clean.ttl
@@ -76,7 +88,11 @@ data/triples_clean.ttl
 
 ### **5. Knowledge Graph Construction**
 - Load triples into a graph database (e.g., **Neo4j**, **GraphDB**, **Fuseki**).
-- Run SPARQL/Cypher queries for validation.  
+- Run SPARQL/Cypher queries for validation.
+- **Source Code:**
+```
+main.ipynb
+```  
 - **Outputs:**  
   - Graph instance  
   - Query notebook with 5–10 example queries: ```data/fuseki_queries.ipynb```   
@@ -85,7 +101,11 @@ data/triples_clean.ttl
 
 ### **6. Fact Extraction & Contradiction Checking**
 - Generate atomic facts and natural-language paraphrases.
-- Detect internal contradictions or overlaps in numerical/textual data.  
+- Detect internal contradictions or overlaps in numerical/textual data.
+- **Source Code:**
+```
+main.ipynb
+``` 
 - **Output:**  
 ```
 data/facts.jsonl
@@ -99,7 +119,11 @@ data/facts.jsonl
   - Factoid QA  
   - List/Compare queries  
   - Reasoning and constraint-based queries  
-- Each example includes **grounding evidence** (linked triples/pages).  
+- Each example includes **grounding evidence** (linked triples/pages).
+- **Source Code:**
+```
+main.ipynb
+``` 
 - **Outputs:**  
 ```
 data/train/test/val/train_instructions.jsonl
@@ -113,6 +137,10 @@ data/train/test/val/val_instructions.jsonl
 - **RAG over KG:** Retrieve facts from KG and use LLM for reasoning.  
 - **Zero-shot LLM:** Directly prompt the model without KG grounding.  
 - **Metrics:** latency, context length, factual coverage.
+- **Source Code:**
+```
+baselines.ipynb
+```
 - **Outputs:**
 ```
 models/baselines/rag_predictions.jsonl
@@ -123,7 +151,12 @@ models/baselines/zero_shot_predictions.jsonl
 
 ### **9. Fine-Tuning Setup**
 - Fine-tune LLM (e.g., **Mistral-7B**, **LLaMA-2-7B**) using **LoRA** or adapter-based methods.
-- Maintain consistent prompt templates with factual guardrails.  
+- Maintain consistent prompt templates with factual guardrails.
+- **Source Code:**
+```
+fine_tuning.ipynb
+model_test.ipynb
+```  
 - **Outputs:**  
   - Training logs: ```models/fine_tuned_model/train/logs/```  
   - Model checkpoints: ```models/fine_tuned_model/train/```   
@@ -141,7 +174,10 @@ models/baselines/zero_shot_predictions.jsonl
   - Relevance  
   - Completeness  
   - Citation correctness  
-
+- **Source Code:**
+```
+model_evaluation.ipynb
+```
 - **Outputs:**
 ```
 evaluation/plots/*.png
@@ -154,6 +190,10 @@ evaluation/plots/*.png
 - Mark unsupported claims.  
 - **Metric:**  
 `Hallucination Rate = % of answers with unsupported claims`
+- **Source Code:**
+```
+model_evaluation.ipynb
+```
 - **Output:**
 ```
 evaluation/plots/hallucination_rate.png
@@ -165,7 +205,13 @@ evaluation/plots/hallucination_rate.png
 Simple **Streamlit/Gradio** app for demonstration:  
 - **Demo Input:** User query  
 - **Demo Output:** Generated answer with inline citations  
-- **Modes:** Zero-shot | RAG-KG | Fine-tuned  
+- **Modes:** Zero-shot | RAG-KG | Fine-tuned
+- **Source Code:**
+```
+app/baseline_gui.ipynb
+app/fine_tuning_gui.ipynb
+app/gui.ipynb
+``` 
 
 ---
 
