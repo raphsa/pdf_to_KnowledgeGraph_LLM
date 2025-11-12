@@ -1,0 +1,71 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\usepackage{tabularx}
+\usepackage{booktabs}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  frame=single,
+  backgroundcolor=\color{gray!5},
+  breaklines=true,
+}
+
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{From PDF to Knowledge graph: A Fine-tuned LLM vs RAG-KG vs Zero-shot LLM comparison \\
+{\footnotesize Natural Language Processing and Text Mining - Project 24} \\
+{\small \textbf{Code available at:} \texttt{https://github.com/raphsa/pdf\_to\_KnowledgeGraph\_LLM}}
+}
+
+\author{\IEEEauthorblockN{Raffaele Sali}
+\IEEEauthorblockA{rsali25@student.oulu.fi}
+\and
+\IEEEauthorblockN{Martina Vianello}
+\IEEEauthorblockA{mvianell25@student.oulu.fi}
+\and
+\IEEEauthorblockN{Beatrice Zani}
+\IEEEauthorblockA{bzani25@student.oulu.fi}
+}
+
+\maketitle
+
+\begin{abstract}
+This project presents a modular pipeline that transforms complex, domain-specific documents into structured, queryable knowledge for grounded language model applications. The workflow begins with PDF ingestion and parsing, extracting text and tables with section-level metadata. A domain ontology defines key entities and relations in food, nutrition, and health, guiding entity recognition and relation extraction to generate validated triples. These are stored in a knowledge graph, enabling structured exploration and fact retrieval. From this graph, a grounded instruction–response dataset is automatically generated, supporting fine-tuning and evaluation of large language models. The system includes Zero-shot, RAG-KG, and fine-tuned baselines, evaluated for factuality, faithfulness, and hallucination control. Finally, a Gradio demo illustrates real-time question answering with source-grounded explanations. The framework demonstrates a scalable approach to integrating structured semantic knowledge with interpretable language model reasoning.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Knowledge Graph, NLP, LLM, RAG-KG, Text Mining, Fine-Tuning
+\end{IEEEkeywords}
+
+% Include sections
+\input{sections/introduction.tex}
+\input{sections/methodology.tex}
+\input{sections/results.tex}
+\input{sections/discussions.tex}
+\input{sections/conclusion.tex}
+
+% References
+\bibliographystyle{IEEEtran}
+\bibliography{references/references}
+
+
+
+% Appendix
+%\appendix
+%\section*{Appendix}
+
+\end{document}
