@@ -225,7 +225,7 @@ Project_24_NLP/
 
 1. Python version:
 
-  - **Python3.10** required
+    - **Python3.10** required
 
 2. Install dependencies:
 
