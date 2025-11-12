@@ -180,6 +180,8 @@ Project_24_NLP/
 │   ├── raw_text.jsonl
 │   ├── ontology.yaml
 │   ├── ontology.ttl
+│   ├── seed_vocabularies.json
+│   ├── new_seed.json
 │   ├── entities_new.jsonl
 │   ├── facts.jsonl
 │   ├── triples_clean.ttl
@@ -221,7 +223,11 @@ Project_24_NLP/
 
 ## 🧰 Installation
 
-Before running the code, make sure to install all required dependencies listed in the requirements.txt file.
+1. Python version:
+
+**Python3.10** required
+
+2. Install dependencies:
 
 ```
 pip install -r requirements.txt
