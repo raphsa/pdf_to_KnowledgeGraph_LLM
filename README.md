@@ -186,7 +186,7 @@ Project_24_NLP/
 │   ├── facts.jsonl
 │   ├── triples_clean.ttl
 │   ├── fuseki_queries.ipynb
-│   ├── sustainable-health-from-food_web.pdf
+│   └── sustainable-health-from-food_web.pdf
 │
 ├── models/
 │   ├── fine_tuned_model/train/
@@ -194,6 +194,10 @@ Project_24_NLP/
 │
 ├── evaluation/
 │   ├── plots/
+│
+├── report/
+│   ├── main.tex
+│   └── main.pdf
 │
 ├── baseline_gui.ipynb
 ├── baselines.ipynb
