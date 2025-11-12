@@ -174,6 +174,11 @@ Simple **Streamlit/Gradio** app for demonstration:
 ```
 Project_24_NLP/
 │
+├── app/
+│   ├── baseline_gui.ipynb
+│   ├── fine_tuning_gui.ipynb
+│   ├── gui.ipynb
+│
 ├── data/
 │   ├── tables/
 │   ├── train/test/val/
@@ -199,16 +204,11 @@ Project_24_NLP/
 │   ├── main.tex
 │   └── main.pdf
 │
-├── baseline_gui.ipynb
 ├── baselines.ipynb
-├── fine_tuning_gui.ipynb
 ├── fine_tuning.ipynb
-├── gui.ipynb
 ├── main.ipynb
 ├── model_test.ipynb
 ├── ner3.ipynb
-├── report.pdf
-├── report.tex
 └── README.md
 ```
 
