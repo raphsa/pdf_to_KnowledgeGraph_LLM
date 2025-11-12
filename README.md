@@ -35,7 +35,7 @@ The end goal is to evaluate whether **LLM fine-tuning on grounded knowledge** im
 - Extract text, headings, and metadata with page anchors.
 - Parse tables into structured formats (`CSV`/`JSON`).
 - Preserve figures, captions, and section hierarchy.  
-**Outputs:**  
+- **Outputs:**  
 ```
 data/raw_text.jsonl
 data/tables/*.csv
@@ -46,7 +46,7 @@ data/tables/*.csv
 ### **2. Domain Schema & Ontology**
 - Design an ontology defining **entities, attributes, and relations** (e.g., `Ingredient`, `Nutrient`, `Recipe`, `Technique`).
 - Specify URI and type conventions.  
-**Output:**  
+- **Output:**  
 ```
 data/ontology.yaml - data/ontology.ttl
 ```
@@ -56,7 +56,7 @@ data/ontology.yaml - data/ontology.ttl
 ### **3. NER & Keyphrase Extraction**
 - Apply **NER** (spaCy/transformer) and **keyphrase extraction** (YAKE, KeyBERT).
 - Map entity mentions to ontology classes and resolve aliases.  
-**Output:**  
+- **Output:**  
 ```
 entities_new.jsonl
 ```
@@ -67,7 +67,7 @@ entities_new.jsonl
 - Identify relations via rule-based or ML models.  
   Example: `Ingredient → hasNutrient → Nutrient`
 - Convert relations into RDF triples with provenance metadata.  
-**Output:**  
+- **Output:**  
 ```
 data/triples_clean.ttl
 ```
@@ -77,16 +77,16 @@ data/triples_clean.ttl
 ### **5. Knowledge Graph Construction**
 - Load triples into a graph database (e.g., **Neo4j**, **GraphDB**, **Fuseki**).
 - Run SPARQL/Cypher queries for validation.  
-**Outputs:**  
-- Graph instance  
-- Query notebook with 5–10 example queries: ```data/fuseki_queries.ipynb```   
+- **Outputs:**  
+  - Graph instance  
+  - Query notebook with 5–10 example queries: ```data/fuseki_queries.ipynb```   
 
 ---
 
 ### **6. Fact Extraction & Contradiction Checking**
 - Generate atomic facts and natural-language paraphrases.
 - Detect internal contradictions or overlaps in numerical/textual data.  
-**Output:**  
+- **Output:**  
 ```
 data/facts.jsonl
 ```
@@ -100,7 +100,7 @@ data/facts.jsonl
   - List/Compare queries  
   - Reasoning and constraint-based queries  
 - Each example includes **grounding evidence** (linked triples/pages).  
-**Outputs:**  
+- **Outputs:**  
 ```
 data/train/test/val/train_instructions.jsonl
 data/train/test/val/test_instructions.jsonl
@@ -112,8 +112,8 @@ data/train/test/val/val_instructions.jsonl
 ### **8. Baseline Models**
 - **RAG over KG:** Retrieve facts from KG and use LLM for reasoning.  
 - **Zero-shot LLM:** Directly prompt the model without KG grounding.  
-**Metrics:** latency, context length, factual coverage.
-**Outputs:**
+- **Metrics:** latency, context length, factual coverage.
+- **Outputs:**
 ```
 models/baselines/rag_predictions.jsonl
 models/baselines/zero_shot_predictions.jsonl
@@ -124,25 +124,25 @@ models/baselines/zero_shot_predictions.jsonl
 ### **9. Fine-Tuning Setup**
 - Fine-tune LLM (e.g., **Mistral-7B**, **LLaMA-2-7B**) using **LoRA** or adapter-based methods.
 - Maintain consistent prompt templates with factual guardrails.  
-**Outputs:**  
-- Training logs: ```models/fine_tuned_model/train/logs/```  
-- Model checkpoints: ```models/fine_tuned_model/train/```   
-- Validation metrics: ```models/fine_tuned_model/train/```
+- **Outputs:**  
+  - Training logs: ```models/fine_tuned_model/train/logs/```  
+  - Model checkpoints: ```models/fine_tuned_model/train/```   
+  - Validation metrics: ```models/fine_tuned_model/train/```
 
 ---
 
 ### **10. Evaluation**
-**Automatic Metrics**
-- F1 for factual QA  
-- ROUGE/BLEU for generation  
-- Constraint satisfaction rate  
+- **Automatic Metrics**
+  - F1 for factual QA  
+  - ROUGE/BLEU for generation  
+  - Constraint satisfaction rate  
 
-**Rubric-based Metrics**
-- Relevance  
-- Completeness  
-- Citation correctness  
+- **Rubric-based Metrics**
+  - Relevance  
+  - Completeness  
+  - Citation correctness  
 
-**Outputs:**
+- **Outputs:**
 ```
 evaluation/plots/*.png
 ```
@@ -152,9 +152,9 @@ evaluation/plots/*.png
 ### **11. Hallucination Detection**
 - Align generated entities and values to KG.
 - Mark unsupported claims.  
-**Metric:**  
+- **Metric:**  
 `Hallucination Rate = % of answers with unsupported claims`
-**Output:**
+- **Output:**
 ```
 evaluation/plots/hallucination_rate.png
 ```
