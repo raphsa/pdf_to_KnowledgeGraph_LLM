@@ -1,20 +1,49 @@
 \section{Results and Discussions}
 
-The outcomes of this project demonstrate the feasibility and effectiveness of transforming a complex, domain-specific report into a structured, machine-interpretable knowledge base. Starting from the Sustainable Health from Food – National Nutrition Recommendations 2024 report \cite{thl2024nutrition}, the developed pipeline successfully extracted, organized, and operationalized knowledge for downstream use in language model grounding and evaluation.
+The results of the project's pipeline are analysed at multiple levels: the quality of the extracted and structured knowledge resulting from PDF parsing and KG construction, the characteristics of the grounded generation of the instruction-response dataset, the behaviour of large language models using different setups and finally the reliability of the generated answers. 
 
-The automated PDF ingestion and parsing process produced a well-structured dataset combining narrative and tabular elements. By leveraging the table of contents to preserve document hierarchy, the system maintained contextual integrity across sections while avoiding the fragmentation typically caused by page based extraction. The resulting dataset provided a faithful digital representation of the original report, forming a strong foundation for subsequent analytical stages.
+From a knowledge representation perspective, the extracted knowledge graph captures the key entities and relations that appear in the original source document. This enables the models used further on in the pipeline to create meaningful connections between food items, nutrients, dietary guidelines and health outcomes, to finally allow the execution of structured queries that would have been otherwise not possible if only considering the original PDF document. An advantage of how the knowledge construction was performed is that section-level and page-level metadata were saved to further support traceability later on in the process. However, the overall quality of the extracted knowledge highly depends on the rule-based and sentence-level nature of the extraction process, which might overlook implicit or long-range relations in the text\cite{relationextraction}. In particular, the method used for generating triples exclusively relies on domain-informed relation rules and only finds relations among entities that appear in the same section and the same sentence. This is optimal in most cases, but might skip certain relations that do not follow that exact structure. This limitation might affect the overall pipeline, as missing or simplified relations could directly influence the scope of the generated instruction–response dataset and the subsequent evaluation of grounded model outputs.
 
-The design of the domain ontology proved essential in organizing the extracted information into meaningful categories. Defining entities such as ingredient, nutrient, dietary guideline, and health outcome allowed the project to bridge textual information with formal semantic structure. This ontology not only guided the entity and relation extraction phases but also ensured conceptual consistency.
+Regarding the grounded dataset creation, the automatically generated instruction–response dataset clearly reflects the structure and coverage of the underlying knowledge graph. By transforming the previously obtained triples into natural language questions and answers, the resulting dataset contains instructions that are all grounded in explicit relations extracted from the source document. Advantages of the employed method for instruction-response generation include the diversification of question types (factoid, list-based, reasoning and constraint-oriented) to ensure good coverage of possible real-life cases as well as the inclusion of page-level citations for each response to enhance transparency and allow verification on the original report. However, because the dataset is derived exclusively from the constructed knowledge graph, its scope is inherently limited to the relations explicitly captured during extraction, as mentioned before. This results in a tendency toward concise and structurally homogeneous answers, which influences both the fine-tuning process and the evaluation setup performed after this step.
 
-Entity and relation extraction yielded a good representation of the report’s contents. Thousands of entity mentions were mapped into typed relations. Although some ambiguity remained around overlapping or generic terms, the overall comprehensiveness of extracted relations was good, and this showed how also policy-oriented reports can be formalized into RDF-style triples. The resulting knowledge graph allowed queries that connect, for instance, food items with both their nutritional properties and associated health outcomes, thus offering systematic way to explore dietary recommendations.
+At the model level, clear behavioural differences emerged between the fine-tuned language model, the retrieval-augmented (RAG-KG) setup, and the zero-shot baseline when applied to the same set of grounded instructions. The fine-tuned model consistently produced concise and well-structured answers that closely followed the format of the instruction–response dataset, including explicit citations to the source document. This behaviour reflected its exposure to the grounded training data and resulted in high scores on automatic metrics, particularly those sensitive to lexical overlap and formatting consistency. In contrast, the zero-shot model tended to generate more verbose and explanatory responses, often incorporating additional background information that is not explicitly present in the source document. While this could improve perceived completeness, it also increased the likelihood of ungrounded statements, as explained in section \ref{subsec:eval}. The RAG-KG setup exhibited an intermediate behaviour: its responses were constrained by the retrieved triples and therefore more grounded than zero-shot outputs, but they remained sensitive to retrieval quality and might exclude relevant information when the matching process failed. Overall, these observations indicated that different grounding strategies lead to distinct trade-offs between answer conciseness, completeness, and factual alignment with the extracted knowledge. A summary of the performance comparison between the three different setups can be seen in table \ref{tab:model_comparison}, while the complete evaluation of the models was previously explained in section \ref{subsec:eval}: \textit{Evaluation}.
 
-Based on the structured knowledge graph, the generation of grounded instruction–response pairs provided a natural language layer that connected formal data with conversational tasks. This dataset demonstrated how triples could be rephrased into usable prompts and answers for LLM and evaluation. The inclusion of grounding metadata, such as source page numbers, strengthened transparency and interpretability.
 
-Starting from the instruction–response dataset, the performance of the large language model (LLM) fine-tuned on the dataset’s contextual information was analyzed and compared with the two baseline models: a context-free LLM and a RAG model enriched through the developed knowledge graph.
-The evaluation revealed the strong performance of the fine-tuned model, which, despite being trained on a single source, demonstrated the ability to effectively learn and reproduce the topic contained in the source PDF. As detailed in the evaluation section, the outcomes of the automatic metrics were primarily influenced by the output format generated by the three models, favoring the fine-tuned LLM, whose responses exhibited a stylistic coherence with those of the instruction–response dataset.
-The most noteworthy findings emerged from the rubric-based metrics, which enabled a more precise assessment of the substantive quality of the responses. These results indicated that the fine-tuned model achieved the highest score in Citation Correctness (Fig.~\ref{fig:citation}) and performed well in Relevance (Fig.~\ref{fig:relevance}). Conversely, the presence of highly concise responses in the instruction–response dataset led the fine-tuned model to adopt a similarly succinct style, which ultimately penalized its performance in the Completeness metric (Fig.~\ref{fig:completeness}).
+\begin{table*}[t]
+\centering
+\caption{Performance comparison across different model setups}
+\label{tab:model_comparison}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{lccccccccccccc}
+\hline
+\textbf{Model} &
+\textbf{F1} &
+\textbf{ROUGE-1} &
+\textbf{ROUGE-2} &
+\textbf{ROUGE-L} &
+\textbf{BLEU-1} &
+\textbf{BLEU-2} &
+\textbf{BLEU-3} &
+\textbf{BLEU-4} &
+\textbf{CSR} &
+\textbf{Rel.} &
+\textbf{Comp.} &
+\textbf{Cit. Corr.} &
+\textbf{Hall. Rate} \\
+\hline
+Zero-shot LLM   & 0.08 & 0.07 & 0.02 & 0.09 & 0.06 & 0.02 & 0.02 & 0.02 & 0.91 & \textbf{0.84} & \textbf{0.85} & 0.87 & 80.90\% \\
+RAG-KG          & 0.10 & 0.11 & 0.05 & 0.11 & 0.07 & 0.04 & 0.03 & 0.02 & \textbf{1.00} & 0.62 & 0.56 & 0.82 & 59.80\% \\
+Fine-tuned LLM  & \textbf{0.69} & \textbf{0.71} & \textbf{0.53} & \textbf{0.70} & \textbf{0.68} & \textbf{0.58} & \textbf{0.47} & \textbf{0.41} & 0.55 & 0.68 & 0.47 & \textbf{0.92} & \textbf{37.30\%} \\
+\hline
+\end{tabular}%
+}
+\end{table*}
 
-Finally, the interactive demo illustrated the end-to-end usability of the system. By allowing users to ask natural language questions and view the model’s grounded answers alongside their document citations, the interface made the abstract process of knowledge extraction and retrieval tangible. This proved valuable not only as a demonstration tool but also as a validation mechanism, showing that domain-grounded AI can serve as a bridge between expert reports and public-facing, interpretable systems.
 
-Overall, the results highlight the potential of integrating structured knowledge extraction, semantic modelling, and grounded language generation in complex expert domains. The project illustrates how authoritative but static documents can be converted into dynamic information systems, ultimately contributing to more transparent and accountable applications of AI in health and nutrition.
 
+
+
+
+
+
+With respect to the reliability of the generated answers, clear differences emerged across the three evaluated model setups. The fine-tuned model consistently demonstrated the highest level of factual alignment with the extracted knowledge, as reflected by its low hallucination rate. This behaviour can be attributed to its training on grounded instruction–response pairs that explicitly linked each answer to source-level evidence. In contrast, the zero-shot model exhibited a higher incidence of hallucinated content, primarily due to its tendency to draw on general background knowledge that is not explicitly supported by the source document. While some of these responses might be factually correct in a broader sense, they remained ungrounded with respect to the constructed knowledge graph and are therefore classified as hallucinations under the adopted evaluation criteria. The RAG-KG setup was again in an intermediate position: its reliance on retrieved triples constrained generation to supported facts when retrieval succeeded, but incomplete or imprecise retrieval could still result in omissions or unsupported statements. Overall, these findings highlighted the role of explicit grounding and structured knowledge in improving the reliability and traceability of language model outputs, particularly in domain-specific settings like the one analysed. 

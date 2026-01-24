@@ -1,13 +1,11 @@
 \section{Methodology}
 
-% add description about this section what it contains and what it's going to explain
-
 The methodology of this project follows a modular pipeline designed to extract structured knowledge from a complex, domain-specific document and to use it for large language model (LLM) fine-tuning and evaluation.
 The methodology is organised into several components, each corresponding to one stage of the pipeline:
 \begin{itemize}
 \item PDF ingestion and parsing;
 \item Domain ontology and ontology draft;
-\item NER and keyphrase extraction;
+\item NER \cite{NER} and keyphrase extraction;
 \item Relation extraction and triple building;
 \item Knowledge graph construction and storage;
 \item Instruction-response dataset creation (grounded);
@@ -20,8 +18,8 @@ This section describes each component in detail.
 
 \subsection{PDF ingestion and parsing}
 
-The PDF ingestion and parsing system was designed to convert a complex, structured PDF document into a machine-readable format suitable for data analysis and information retrieval. The process integrates several Python libraries to detect, extract, and organise both textual and tabular information while preserving the logical structure of the original document.
-The first stage focuses on identifying and parsing the table of contents (\texttt{TOC}), in order to then get a better division for text chunks. Using \texttt{PyMuPDF}, the entire PDF and the section titled “Contents” or “Table of Contents” is scanned. This section is then cleaned of irrelevant page artefacts such as publisher names or header text. After finding the section, through the use of regular expressions, each line of the \texttt{TOC} is decomposed into a section title and a corresponding page number. The resulting output is normalized and assembled into a tabular form using \texttt{pandas}, which produces a structured index of section titles and their starting pages. This index forms the backbone of the document’s hierarchical reconstruction.
+The PDF ingestion and parsing system was designed to convert a complex, structured PDF document into a machine-readable format suitable for data analysis and information retrieval. The process integrates several Python libraries to detect, extract and organise both textual and tabular information while preserving the logical structure of the original document.
+The first stage focuses on identifying and parsing the table of contents (\texttt{TOC}), in order to then get a better division for text chunks. Using \texttt{PyMuPDF} \cite{pymupdf}, the entire PDF and the section titled “Contents” or “Table of Contents” is scanned. This section is then cleaned of irrelevant page artefacts such as publisher names or header text. After finding the section, through the use of regular expressions, each line of the \texttt{TOC} is decomposed into a section title and a corresponding page number. The resulting output is normalized and assembled into a tabular form using \texttt{pandas} \cite{pandas}, which produces a structured index of section titles and their starting pages. This index forms the backbone of the document’s hierarchical reconstruction.
 
 In the second stage, the program iteratively traverses the full text of the PDF, page by page, to associate each segment of text with its correct section heading. Each page is read as a series of lines, and pattern matching is used to identify when a new section begins, based on the \texttt{TOC} entries detected earlier. Text that falls between these headings is aggregated and labelled as belonging to that specific section. 
 The final result is a set of text chunks in which every passage is linked to a document section and page number. These are stored in a JSON Lines (\texttt{.jsonl}) file to facilitate subsequent analysis and/or indexing.
@@ -37,7 +35,7 @@ The final result is a set of text chunks in which every passage is linked to a d
 \end{figure}
 
 
-Parallel to text extraction, a third process handles table recognition. The script employs \texttt{Camelot} in two configurations, \texttt{STREAM} and \texttt{LATTICE}, to capture both text-aligned and line-bordered tables.
+Parallel to text extraction, a third process handles table recognition. The script employs \texttt{Camelot} \cite{camelot_py} in two configurations, \texttt{STREAM} and \texttt{LATTICE}, to capture both text-aligned and line-bordered tables.
 Every detected table is cleaned, converted into a \texttt{pandas DataFrame}, and exported as a \texttt{CSV} file, together with metadata indicating the page number, table dimensions, and file path. In this way, textual and tabular data are separated but remain referentially linked to the same document structure.
 Together, these steps produce a structured dataset from the original PDF: a machine-readable representation of both the narrative and the quantitative content of the report. This enables further computational analysis, such as keyword extraction or thematic clustering.
 
@@ -65,7 +63,7 @@ The ontology also defines key relations connecting these entities, such as:
     \item \textbf{usesTechnique}: ingredient $\rightarrow$ technique.
     \item \textbf{hasGuideline}: ingredient $\rightarrow$ dietaryGuideline
     \item \textbf{aimsToImprove}: dietaryGuideline $\rightarrow$ healthOutcome
-    \item \textbf{hasEnvironmentalImpact}: ingredient $\rightarrow$ environmentImpact
+    \item \textbf{hasEnvironmentalImpact}: ingredient$\rightarrow$ environmentImpact
     \item \textbf{affectsRiskOf}: nutrient $\rightarrow$ healthOutcome
 \end{itemize}
 
@@ -75,11 +73,11 @@ The ontology acts as a unifying layer between raw textual information and the st
 
 
 \subsection{NER and keyphrase extraction}
-The named entity recognition (NER) and keyphrase extraction stage focused on identifying and normalizing domain-specific entities mentioned in the text. This process aimed at generating a structured list of unique entities, aligned with the previously defined ontology, to create the base of the knowledge graph population. 
+The named entity recognition (NER) \cite{NER} and keyphrase extraction stage focused on identifying and normalizing domain-specific entities mentioned in the text. This process aimed at generating a structured list of unique entities, aligned with the previously defined ontology, to create the base of the knowledge graph population. 
 
 Firstly, a seed vocabulary was created to list an initial set of example entities extracted from the parsed text. Each text chunk was analyzed and cleaned (for instance, by removing punctuation), then occurrences of ontology classes were detected by using predefined keyword lists and regular expressions. Only the terms appearing in at least two distinct chunks were kept. The resulting list of seeds was then cleaned and refined by removing irrelevant terms and adding missing but semantically important ones. An example of terms saved for the class \textbf{ingredient} includes: “alcohol”, “barley”, “beans”, “berries”, “butter”, “cereals”, “cheese”.
 
-The second step consisted in generating the final entities file, where each line contains information about a unique entity found in the extracted text. This process combined the raw text, the seeds created earlier and the ontology to perform entity recognition and normalization. Using \texttt{spaCy}, the algorithm scanned the text chunks looking for mentions of the seed examples, then grouped synonyms and merged aliases. For each merged group, the most generic label was selected as the canonical entity name and a unique identified was assigned. The most important fields stored for each unique mention are:
+The second step consisted in generating the final entities file, where each line contains information about a unique entity found in the extracted text. This process combined the raw text, the seeds created earlier and the ontology to perform entity recognition and normalization. Using \texttt{spaCy} \cite{spacy}, the algorithm scanned the text chunks looking for mentions of the seed examples, then grouped synonyms and merged aliases. For each merged group, the most generic label was selected as the canonical entity name and a unique identified was assigned. The most important fields stored for each unique mention are:
 \begin{itemize}
     \item\textbf{id} - unique identifier created from the ontology class prefix and an incremental index.
     \item \textbf{type} - ontology class associated with the entity.
@@ -140,7 +138,7 @@ ex:grains ex:hasNutrient ex:protein ;
 \end{figure}
 
 \subsection{Knowledge graph construction and storage}
-After generating the domain-specific RDF triples, an ontology integration and querying stage was implemented to enable structured exploration of the extracted knowledge. To manage and query the extracted knowledge graph, \texttt{Apache Jena Fuseki} was employed as a SPARQL endpoint. The server was deployed locally using Docker, ensuring a reproducible and isolated environment for data management. The RDF triples generated from the extraction process were uploaded to a dedicated Fuseki dataset (\texttt{http://localhost:3030/nutrition\_pdf}), allowing direct querying of the structured information.
+After generating the domain-specific RDF triples, an ontology integration and querying stage was implemented to enable structured exploration of the extracted knowledge. To manage and query the extracted knowledge graph, \texttt{Apache Jena Fuseki} was employed as a SPARQL endpoint \cite{apache_jena}. The server was deployed locally using Docker, ensuring a reproducible and isolated environment for data management. The RDF triples generated from the extraction process were uploaded to a dedicated Fuseki dataset (\texttt{http://localhost:3030/nutrition\_pdf}), allowing direct querying of the structured information.
 
 The interaction with the dataset was performed through the \texttt{SPARQLWrapper} Python library, which allowed programmatic execution of SPARQL queries and seamless integration with data analysis tools. Aftet setting up the database, a series of queries were executed for a sanity check and the results were displayed. For example, some queries retrieved relationships between ingredients and nutrients, associations between food items and environmental impacts, and links between nutrients and health outcomes. A final query extracted entities annotated with the corresponding page numbers from the source PDF, allowing the provenance of each extracted element to be traced back to its original context.
 
@@ -185,9 +183,9 @@ All generated pairs were grounded in the original source document through explic
 
 
 \subsection{Baselines: RAG over KG vs. Zero-Shot LLM}
-The baseline evaluation stage aimed at comparing two different strategies for question answering over the extracted knowledge: a \textbf{retrieval-augmented generation (RAG)} approach grounded in the knowledge graph and a \textbf{zero-shot large language model (LLM)} approach without context retrieval. The objective was to compare the effectiveness, efficiency, and contextual grounding of LLM outputs when structured evidence was provided versus when only internal model knowledge was used. Subsequently, the two baseline models were compared with the results obtained from the fine-tuned LLM, in order to assess how the latter behaved with respect to the two reference models.
+The baseline evaluation stage aimed at comparing two different strategies for question answering over the extracted knowledge: a \textbf{retrieval-augmented generation (RAG)} \cite{whatRAG} \cite{RAGsurvey} approach grounded in the knowledge graph and a \textbf{zero-shot large language model (LLM)} \cite{llmzeroshot} approach without context retrieval. The objective was to compare the effectiveness, efficiency, and contextual grounding of LLM outputs when structured evidence was provided versus when only internal model knowledge was used. Subsequently, the two baseline models were compared with the results obtained from the fine-tuned LLM, in order to assess how the latter behaved with respect to the two reference models.
 
-The choice of the LLM used to construct the two baseline models was guided by a trade-off among cost, performance, and sustained capacity in terms of tokens and request limits, both per minute and per day. This evaluation led to the selection of the \texttt{Groq API}, specifically the \textbf{llama-3.1-8b-instant} model.
+The choice of the LLM used to construct the two baseline models was guided by a trade-off among cost, performance, and sustained capacity in terms of tokens and request limits, both per minute and per day. This evaluation led to the selection of the \texttt{Groq API}, specifically the \textbf{llama-3.1-8b-instant} model \cite{llama3}.
 
 Both baseline models were prompted using predefined instructions:
 \begin{itemize}
@@ -223,7 +221,7 @@ Finally, both baseline models were applied to the set of questions in the test s
 
 \subsection{Fine-tuning setup}
 
-For the fine-tuning phase, we employed the \textbf{Mistral-7B} model, a compact yet high-performing open-weight large language model designed for efficient instruction following and factual reasoning. Mistral was selected due to its balance between computational efficiency and linguistic capability, enabling fine-tuning on consumer-grade hardware while retaining generation quality. To reduce memory overhead and training time, we applied \textbf{Low-Rank Adaptation (LoRA)}, which introduced a small number of trainable parameters into existing model layers instead of updating all weights. This approach allowed for fast domain adaptation without compromising the integrity of the pretrained representations.
+For the fine-tuning phase, the \textbf{Mistral-7B} model \cite{mistral7b} was employed, a compact yet high-performing open-weight large language model designed for efficient instruction following and factual reasoning. Mistral was selected due to its balance between computational efficiency and linguistic capability, enabling fine-tuning on consumer-grade hardware while retaining generation quality. To reduce memory overhead and training time, \textbf{Low-Rank Adaptation (LoRA)} \cite{hu2021lora} was applied, which introduced a small number of trainable parameters into existing model layers instead of updating all weights. This approach allowed for fast domain adaptation without compromising the integrity of the pretrained representations \cite{lora_guide} \cite{lora_power}. 
 The training data consisted of the instruction–response pairs generated from the knowledge graph, ensuring that all responses were grounded in factual content extracted from the report “Sustainable Health from Food” PDF. Each example included the instruction, its grounded context, and reference sources to encourage citation-aware generation.
 
 Figure~\ref{fig:prompt_example} illustrates the structure of the prompt used to fine-tune the model. Several system prompts were tested during the different training sessions, with the best results obtained using the prompt shown in the figure. For each row of the test set, the system prompt was combined with the instruction and the expected response.
@@ -240,19 +238,57 @@ Figure~\ref{fig:prompt_example} illustrates the structure of the prompt used to 
 \end{figure}
 
 
-Training was performed using parameter-efficient fine-tuning (\texttt{PEFT}) methods implemented via the \texttt{Hugging Face transformers} and \texttt{peft} libraries. Hyperparameters were optimized through iterative experimentation to balance training stability, model generalization, and computational efficiency. Several configurations were tested, varying the learning rate, LoRA rank (4, 8, and 16), LoRA alpha (16, 32) and the number of epochs (ranging from 3 to 20) \cite{hu2021lora}. These experiments allowed us to identify the combination that produced consistent convergence without overfitting or degradation in factual precision.
-We used \texttt{bf16} precision to minimize memory usage and improve numerical stability, and employed the \texttt{AdamW} optimizer with a linear warm-up schedule ($10 \%$ of total steps) to ensure smooth gradient updates during the early training stages. The fine-tuning process ran for twenty epochs, with early stopping based on validation loss to prevent overfitting and unnecessary computation. Careful tuning of these parameters was crucial: the learning rate determined the extent of weight adaptation from the base Mistral model, while the LoRA rank controlled the representational capacity of the adapter layers—higher ranks increasing expressiveness, but also memory cost. Similarly, the epoch count influenced how well the model internalized domain-specific relations without memorizing examples. This parameter sensitivity analysis ensured that the final configuration achieved optimal alignment with the nutrition and sustainability domain while maintaining efficient resource utilization.
+Training was performed using parameter-efficient fine-tuning (\texttt{PEFT}) methods implemented via the \texttt{Hugging Face transformers} and \texttt{peft} libraries \cite{peft}. Hyperparameters were optimized through iterative experimentation to balance training stability, model generalization, and computational efficiency. Several configurations were tested, varying the learning rate, LoRA rank ($4$, $8$, and $16$), LoRA alpha ($16$, $32$), LoRA dropout (set to $0.05$) and the number of epochs (ranging from $3$ to $20$). These experiments allowed us to identify the combination that produced consistent convergence without overfitting or degradation in factual precision. Additionally, the base model was quantized using 4-bit NF4 precision, which significantly reduced memory footprint while maintaining training performance \cite{qlora_quantization}.
+
+LoRA adapters were applied exclusively to the query and value projection matrices (\texttt{q\_proj} and \texttt{v\_proj}) of the Transformer attention layers. The query projection (\texttt{q\_proj}) maps each token’s representation into a query vector, which determines what information the token is attending to in the sequence. The value projection (\texttt{v\_proj}) maps token representations into value vectors, which determine what information is actually passed forward once attention weights are applied. This choice is motivated by prior work showing that these components capture the majority of task-specific adaptation capacity in attention mechanisms, while enabling highly parameter-efficient fine-tuning. Updating only these projections preserves pretrained representations, improves training stability, and achieves performance comparable to full fine-tuning with significantly fewer trainable parameters \cite{hu2021lora}.
+In fact, empirical results show that fine-tuning only \texttt{q\_proj} and \texttt{v\_proj} captures most of the downstream task adaptation capacity and updating additional projections (e.g., \texttt{k\_proj}, \texttt{o\_proj}, or FFN layers) yields diminishing returns relative to the added parameters. This makes \texttt{q\_proj} and \texttt{v\_proj} an optimal compute–performance trade-off.
+\texttt{bf16} precision was used to minimize memory usage and improve numerical stability, \texttt{AdamW} optimizer \cite{adamW} with a linear warm-up schedule ($10 \%$ of total steps) was employed to ensure smooth gradient updates during the early training stages. The fine-tuning process ran for twenty epochs, with early stopping based on validation loss to prevent overfitting and unnecessary computation. Careful tuning of these parameters was crucial: the learning rate determined the extent of weight adaptation from the base Mistral model, while the LoRA rank controlled the representational capacity of the adapter layers; higher ranks increasing expressiveness, but also memory cost \cite{hu2021lora}. Similarly, the epoch count influenced how well the model internalized domain-specific relations without memorizing examples. This parameter sensitivity analysis ensured that the final configuration achieved optimal alignment with the nutrition and sustainability domain while maintaining efficient resource utilization. Figure \ref{fig:fine_tuning_pseudo} shows the setup of the Mistral-7B model adopted for parameter-efficient fine-tuning using LoRA adapters, including 4-bit NF4 quantization.
+
+\begin{figure}[h!]
+\centering
+\begin{lstlisting}
+mdl_name ="mistralai/Mistral-7B-Instruct-v0.2"
+
+bnb_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.float16,
+    bnb_4bit_use_double_quant=True,)
+
+model = AutoModelForCausalLM.from_pretrained(
+    mdl_name,
+    quantization_config=bnb_config,
+    device_map="auto",
+    trust_remote_code=True,)
+    
+model = prepare_model_for_kbit_training(model)
+
+lora_config = LoraConfig(
+    r=8,                            
+    lora_alpha=16,                  
+    target_modules=["q_proj", "v_proj",],
+    lora_dropout=0.05,           
+    bias="none",                 
+    task_type="CAUSAL_LM")
+
+model = get_peft_model(model, lora_config)
+\end{lstlisting}
+\caption{Fine tuning setup with 4-bit quantization and LoRA adapters}
+\label{fig:fine_tuning_pseudo}
+\end{figure}
+
 To further enhance the linguistic robustness and the generalization of the model, paraphrased versions of the training examples were included in the fine-tuning step. This approach exposed the model to semantically equivalent questions expressed in varied syntactic forms, allowing it to generalize beyond fixed phrasings. From a practical perspective, this step is critical in mitigating surface-form dependency, ensuring that the model learns to reason over factual content rather than memorize specific lexical patterns. As a result, the model demonstrated improved tolerance to linguistic variation, answering correctly even when user inputs deviated from the original dataset formulations.
 
 
 \subsection{Evaluation}
+\label{subsec:eval}
 During the evaluation stage, several metrics were employed to assess the performance of the fine-tuned model compared with the two baseline models. Both automatic metrics, whose assessment derives from a computed score, and rubric-based metrics, where evaluation was delegated to an LLM (specifically, \textbf{meta-llama/llama-4-scout-17b-16e-instruct}), were developed. The following metrics were used:
 \begin{itemize}
     \item \textbf{Automatic Metrics}
     \begin{itemize}
         \item \textbf{F1 Score:} computes the harmonic mean between precision and recall at the token level, capturing partial overlap between the predicted and reference answers. The F1 score was used only for factoid instructions.
-        \item \textbf{ROUGE (Recall-Oriented Understudy for Gisting Evaluation):} evaluates the similarity between predicted and reference answers based on overlapping n-grams. ROUGE1 (measures overlaps of unigrams), ROUGE2 (measures overlap of bigrams) and ROUGEL scores (measures the longest common Subsequence between the predicted and reference answers) were computed.
-        \item \textbf{BLEU (Bilingual Evaluation Understudy):} measures the precision-oriented overlap of n-grams between the generated output and the reference answer. BLEU1, BLEU2, BLEU3 and BLEU4 scores, which differ in the length of the n-grams they consider, were computed.
+        \item \textbf{ROUGE (Recall-Oriented Understudy for Gisting Evaluation):} \cite{rouge} evaluates the similarity between predicted and reference answers based on overlapping n-grams. ROUGE1 (measures overlaps of unigrams), ROUGE2 (measures overlap of bigrams) and ROUGEL scores (measures the longest common Subsequence between the predicted and reference answers) were computed.
+        \item \textbf{BLEU (Bilingual Evaluation Understudy):} \cite{bleu} measures the precision-oriented overlap of n-grams between the generated output and the reference answer. BLEU1, BLEU2, BLEU3 and BLEU4 scores, which differ in the length of the n-grams they consider, were computed.
         \item \textbf{Constraint Satisfaction Rate:} quantifies the proportion of model responses that satisfy predefined structural or semantic constraints, such as the presence of required entities, citations, or formatting rules. This metric was applied only to constraint-based queries, where such conditions are explicitly encoded in the instruction.
     \end{itemize}
     \item \textbf{Rubric-Based Metrics}
@@ -262,7 +298,7 @@ During the evaluation stage, several metrics were employed to assess the perform
         \item \textbf{Citation Correctness:} measures whether the answer appropriately cites the source from which the information was derived, and whether the cited reference is accurate.
     \end{itemize}
 \end{itemize}
-The rubric-based metrics were implemented by providing the evaluation LLM (\texttt{meta-llama/llama-4-scout-17b-16e-instruct}) with a dedicated prompt instructing it to score a given answer, for a specific question, along the three qualitative dimensions listed above. The model returned the scores in a structured dictionary format, allowing their storage and subsequent aggregation.
+The rubric-based metrics were implemented by providing the evaluation LLM with a dedicated prompt instructing it to score a given answer, for a specific question, along the three qualitative dimensions listed above. The model returned the scores in a structured dictionary format, allowing their storage and subsequent aggregation.
 
 All metrics were computed for each instruction–prediction pair produced by the three models, and the resulting values were used to generate bar charts representing the average score obtained by the fine-tuned model, the RAG-KG model, and the zero-shot LLM baseline.
 
